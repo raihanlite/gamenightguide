@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.url == "/" %}{{ site.name }} — {{ site.tagline }}{% elif title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} — {{ site.tagline }}{% endif %}</title>
+<meta name="description" content="{{ description or site.description }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">
+<meta property="og:type" content="{% if layout == 'layouts/post.njk' %}article{% else %}website{% endif %}">
+<meta property="og:site_name" content="{{ site.name }}">
+<meta property="og:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+<meta property="og:description" content="{{ description or site.description }}">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta property="og:image" content="{{ site.url }}{{ image or '/images/og-home.png' }}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
+<meta name="twitter:description" content="{{ description or site.description }}">
+<meta name="twitter:image" content="{{ site.url }}{{ image or '/images/og-home.png' }}">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23232a35'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/assets/style.css">
+<link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
+{% if layout == 'layouts/post.njk' %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": {{ title | dump | safe }},
+      "description": {{ (description or site.description) | dump | safe }},
+      "author": { "@type": "Organization", "name": {{ site.name | dump | safe }} },
+      "publisher": { "@type": "Organization", "name": {{ site.name | dump | safe }} },
+      "datePublished": "{{ page.date | readableDate }}",
+      "dateModified": "{{ page.date | readableDate }}",
+      "mainEntityOfPage": "{{ site.url }}{{ page.url }}",
+      "image": "{{ site.url }}{{ image or '/images/og-home.png' }}"
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{ site.url }}/" },
+        { "@type": "ListItem", "position": 2, "name": "Guides", "item": "{{ site.url }}/guides/" },
+        { "@type": "ListItem", "position": 3, "name": {{ title | dump | safe }}, "item": "{{ site.url }}{{ page.url }}" }
+      ]
+    }
+  ]
+}
+</script>
+{% elif page.url == "/" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.name | dump | safe }},
+  "description": {{ site.description | dump | safe }},
+  "url": {{ site.url | dump | safe }}
+}
+</script>
+{% endif %}
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/">{{ site.name }}</a>
+    <nav aria-label="Main">
+      <a href="/guides/">Guides</a>
+      <a href="/finder/">Finder</a>
+      <a href="/about/">About</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+{{ content | safe }}
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>{{ site.name }}</strong> — {{ site.tagline }}</p>
+    <p>
+      <a href="/about/">About</a> · <a href="/contact/">Contact</a> ·
+      <a href="/privacy/">Privacy</a> · <a href="/disclaimer/">Disclaimer</a> ·
+      <a href="/affiliate-disclosure/">Affiliate Disclosure</a> · <a href="/feed.xml">RSS</a>
+    </p>
+    <p class="muted">Prices change. Always check the live price at the store before you buy. Game facts last checked {{ site.lastChecked }}. This site earns a commission on some links, at no extra cost to you — see the <a href="/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

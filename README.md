@@ -4,8 +4,20 @@ Board games for beginners, couples and families — in plain English.
 English only, USA only. No Bangla, no Bangladesh content.
 
 - **Site (live):** https://raihanlite.github.io/gamenightguide/
-  — GitHub Pages, repo `raihanlite/gamenightguide`, deployed by
-  `.github/workflows/deploy.yml` on every push to `main`.
+  — GitHub Pages, repo `raihanlite/gamenightguide`.
+- **How deploy works (22 Nov 2026):** GitHub Pages serves the
+  `gh-pages` branch (built output only). Two pushes per update:
+  source → `main`, then the built `_site/` folder → `gh-pages`.
+  The API token used to push has only the `repo` scope, so it
+  **cannot** push files under `.github/workflows/` (GitHub answers
+  404 for workflow paths without the `workflow` scope) — that is
+  why there is no Actions auto-deploy yet. A ready-made
+  `.github/workflows/deploy.yml` is kept in the local source only
+  (not in the repo). To switch to Actions builds later: either add
+  that file through the GitHub web UI, or regenerate the token
+  with the `workflow` scope and push it via the API; then change
+  the Pages source to GitHub Actions and delete the `gh-pages`
+  branch workflow.
 - **Custom domain:** not set yet. `gamenightguide.com` is still only a
   placeholder idea, not bought. When a real domain is bought, change
   `url` (and `email`) in `src/_data/site.json` and remove

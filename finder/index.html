@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Board Game Finder | Game Night Guide</title>
+<meta name="description" content="Answer four questions — players, time, budget, type — and find a board game that fits your table. Free, no sign-up, works offline.">
+<link rel="canonical" href="https://raihanlite.github.io/gamenightguide/finder/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Game Night Guide">
+<meta property="og:title" content="Board Game Finder">
+<meta property="og:description" content="Answer four questions — players, time, budget, type — and find a board game that fits your table. Free, no sign-up, works offline.">
+<meta property="og:url" content="https://raihanlite.github.io/gamenightguide/finder/">
+<meta property="og:image" content="https://raihanlite.github.io/gamenightguide/images/og-finder.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Board Game Finder">
+<meta name="twitter:description" content="Answer four questions — players, time, budget, type — and find a board game that fits your table. Free, no sign-up, works offline.">
+<meta name="twitter:image" content="https://raihanlite.github.io/gamenightguide/images/og-finder.png">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23232a35'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="/gamenightguide/assets/style.css">
+<link rel="alternate" type="application/rss+xml" title="Game Night Guide" href="/gamenightguide/feed.xml">
+
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="/gamenightguide/">Game Night Guide</a>
+    <nav aria-label="Main">
+      <a href="/gamenightguide/guides/">Guides</a>
+      <a href="/gamenightguide/finder/">Finder</a>
+      <a href="/gamenightguide/about/">About</a>
+    </nav>
+  </div>
+</header>
+<main class="wrap">
+<h1>Board Game Finder</h1>
+<p class="lede">Four questions, one short list. The Finder only uses games from our own list — the games we have written about and checked.</p>
+<form id="finder-form">
+  <label for="f-players">How many players?</label>
+  <select id="f-players" name="players">
+    <option value="any">Any</option>
+    <option value="1">Just me (solo)</option>
+    <option value="2">2 players</option>
+    <option value="3-4">3–4 players</option>
+    <option value="5+">5 or more players</option>
+  </select>
+<p><label for="f-time">How much time?</label>
+<select id="f-time" name="time">
+<option value="any">Any</option>
+<option value="under30">Under 30 minutes</option>
+<option value="30-60">30–60 minutes</option>
+<option value="over60">Over 60 minutes</option>
+</select></p>
+<p><label for="f-budget">Budget</label>
+<select id="f-budget" name="budget">
+<option value="any">Any budget</option>
+<option value="under30">Under $30</option>
+<option value="30-60">$30–$60</option>
+<option value="over60">Over $60</option>
+</select></p>
+<p><label for="f-type">What kind of game?</label>
+<select id="f-type" name="type">
+<option value="any">Any type</option>
+<option value="strategy">Strategy</option>
+<option value="party">Party</option>
+<option value="cooperative">Cooperative</option>
+<option value="family">Family</option>
+</select></p>
+<p><label><input type="checkbox" name="includeUnknown" checked> Include games whose price we have not verified</label></p>
+<p><button type="submit">Find my game</button></p>
+</form>
+<p id="finder-count" aria-live="polite"></p>
+<div id="finder-results" aria-live="polite"></div>
+<script>
+window.GAMES = [{"ageMin":8,"bestFor":"First modern board game for a family","bgg":null,"complexity":null,"name":"Ticket to Ride","playersMax":5,"playersMin":2,"priceUSD":null,"timeMax":60,"timeMin":45,"type":"family"},{"ageMin":7,"bestFor":"Relaxed tile-laying for two or more","bgg":null,"complexity":null,"name":"Carcassonne","playersMax":5,"playersMin":2,"priceUSD":null,"timeMax":45,"timeMin":35,"type":"strategy"},{"ageMin":null,"bestFor":"Big groups and party nights","bgg":null,"complexity":null,"name":"Codenames","playersMax":null,"playersMin":4,"priceUSD":null,"timeMax":20,"timeMin":15,"type":"party"},{"ageMin":8,"bestFor":"Calm, tactile strategy","bgg":null,"complexity":null,"name":"Azul","playersMax":4,"playersMin":2,"priceUSD":null,"timeMax":45,"timeMin":30,"type":"strategy"},{"ageMin":null,"bestFor":"Quiet engine-building in 30 minutes","bgg":null,"complexity":null,"name":"Splendor","playersMax":4,"playersMin":2,"priceUSD":null,"timeMax":30,"timeMin":30,"type":"strategy"},{"ageMin":null,"bestFor":"Fast, silly card drafting","bgg":null,"complexity":null,"name":"Sushi Go!","playersMax":5,"playersMin":2,"priceUSD":null,"timeMax":20,"timeMin":15,"type":"party"},{"ageMin":8,"bestFor":"Families and quick plays","bgg":null,"complexity":null,"name":"Kingdomino","playersMax":4,"playersMin":2,"priceUSD":null,"timeMax":25,"timeMin":15,"type":"family"},{"ageMin":10,"bestFor":"Couples and families who like a calm puzzle","bgg":null,"complexity":null,"name":"Cascadia","playersMax":4,"playersMin":1,"priceUSD":null,"timeMax":45,"timeMin":30,"type":"strategy"},{"ageMin":8,"bestFor":"Two players, 15 to 30 minutes","bgg":7.6,"complexity":1.6,"name":"Patchwork","playersMax":2,"playersMin":2,"priceUSD":null,"timeMax":30,"timeMin":15,"type":"strategy"},{"ageMin":null,"bestFor":"Mixed-experience groups, starts in minutes","bgg":null,"complexity":null,"name":"Just One","playersMax":7,"playersMin":3,"priceUSD":null,"timeMax":20,"timeMin":20,"type":"party"},{"ageMin":10,"bestFor":"First strategy game with trading and building","bgg":null,"complexity":null,"name":"Catan","playersMax":4,"playersMin":3,"priceUSD":null,"timeMax":90,"timeMin":60,"type":"strategy"},{"ageMin":8,"bestFor":"Groups who want to win or lose together","bgg":null,"complexity":null,"name":"Pandemic","playersMax":4,"playersMin":2,"priceUSD":null,"timeMax":60,"timeMin":45,"type":"cooperative"},{"ageMin":null,"bestFor":"Two players who want a quick tactical game","bgg":7.5,"complexity":1.46,"name":"Jaipur","playersMax":2,"playersMin":2,"priceUSD":null,"timeMax":30,"timeMin":30,"type":"strategy"},{"ageMin":10,"bestFor":"Two players who want a head-to-head duel","bgg":8.1,"complexity":2.23,"name":"7 Wonders Duel","playersMax":2,"playersMin":2,"priceUSD":null,"timeMax":30,"timeMin":30,"type":"strategy"},{"ageMin":11,"bestFor":"Couples who want to cooperate, not compete","bgg":null,"complexity":null,"name":"Codenames: Duet","playersMax":2,"playersMin":2,"priceUSD":null,"timeMax":20,"timeMin":15,"type":"cooperative"},{"ageMin":null,"bestFor":"Two players, 20 minutes, cooperative flying","bgg":null,"complexity":null,"name":"Sky Team","playersMax":2,"playersMin":2,"priceUSD":null,"timeMax":20,"timeMin":20,"type":"cooperative"},{"ageMin":null,"bestFor":"Solo players who want a deep strategy game","bgg":8.4,"complexity":null,"name":"Spirit Island","playersMax":null,"playersMin":1,"priceUSD":57.99,"timeMax":120,"timeMin":90,"type":"strategy"},{"ageMin":null,"bestFor":"Solo players who want a long engine-builder","bgg":8.4,"complexity":null,"name":"Terraforming Mars","playersMax":null,"playersMin":1,"priceUSD":79.99,"timeMax":120,"timeMin":120,"type":"strategy"},{"ageMin":null,"bestFor":"Solo players who want a big adventure","bgg":8.1,"complexity":null,"name":"Mage Knight","playersMax":null,"playersMin":1,"priceUSD":79.99,"timeMax":240,"timeMin":60,"type":"strategy"},{"ageMin":null,"bestFor":"Two to five players, a full hour of play","bgg":null,"complexity":null,"name":"Forest Shuffle","playersMax":5,"playersMin":2,"priceUSD":null,"timeMax":60,"timeMin":60,"type":"strategy"},{"ageMin":null,"bestFor":"Solo or small-group play, long sessions","bgg":null,"complexity":null,"name":"Ark Nova","playersMax":4,"playersMin":1,"priceUSD":null,"timeMax":150,"timeMin":150,"type":"strategy"},{"ageMin":null,"bestFor":"Solo players who want fifteen quiet minutes","bgg":7.6,"complexity":1.1,"name":"A Gentle Rain","playersMax":1,"playersMin":1,"priceUSD":null,"timeMax":15,"timeMin":15,"type":"strategy"}];
+</script>
+<script src="/gamenightguide/assets/finder.js"></script>
+<h2>How the Finder works</h2>
+<ul>
+<li><strong>Players:</strong> a game matches if your group size is inside its player range. A game listed as “2–5 players” matches 2, 3–4 and 5+.</li>
+<li><strong>Budget:</strong> we only filter on prices we have actually verified (checked 22 Nov 2026). Most games in our list have no verified price yet, so they only appear when “Include games whose price we have not verified” is ticked — or when you pick “Any budget”. Prices change; always check the live price at the store before you buy.</li>
+<li><strong>No tracking:</strong> the Finder runs entirely in your browser. Nothing you pick is sent anywhere.</li>
+</ul>
+<p>Not sure where to start? Read the <a href="/gamenightguide/guides/best-board-games-for-beginners/">beginners guide</a> first.</p>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <p><strong>Game Night Guide</strong> — Board games for beginners, couples and families — in plain English.</p>
+    <p>
+      <a href="/gamenightguide/about/">About</a> · <a href="/gamenightguide/contact/">Contact</a> ·
+      <a href="/gamenightguide/privacy/">Privacy</a> · <a href="/gamenightguide/disclaimer/">Disclaimer</a> ·
+      <a href="/gamenightguide/affiliate-disclosure/">Affiliate Disclosure</a> · <a href="/gamenightguide/feed.xml">RSS</a>
+    </p>
+    <p class="muted">Prices change. Always check the live price at the store before you buy. Game facts last checked 22 Nov 2026. This site earns a commission on some links, at no extra cost to you — see the <a href="/gamenightguide/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
+  </div>
+</footer>
+</body>
+</html>

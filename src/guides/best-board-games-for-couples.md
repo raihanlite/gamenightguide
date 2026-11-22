@@ -3,15 +3,16 @@ layout: layouts/post.njk
 title: Best Board Games for Couples
 description: "The best board games for two people: date-night picks that are actually good with two, not games that just tolerate two players. Patchwork, Jaipur, 7 Wonders Duel and more."
 date: 2026-11-22
-image: /images/og-couples.png
-imageAlt: "Best board games for couples: text graphic, Game Night Guide"
+image: /images/og-couples.jpg
+imageAlt: "A young couple playing chess together at home, Game Night Guide"
+photo: /images/photos/couples.jpg
 ---
 
-Most board games say “2–5 players” on the box. That does not mean they are good with two. A lot of games that claim to work with two are really games for four that have been squeezed down.
+Two people, one table, one game. That is the whole evening, and it can be a good one.
 
-The map feels empty and one player runs away with the game while the other waits.
+The problem is the box. Most board games say "2 to 5 players", but a game built for four often feels empty with two. One player runs away with it while the other waits for a turn that never matters.
 
-This guide is different. Every game here is either made for exactly two players, or is widely played and rated well at two. If you are a couple looking for a date-night game, start here.
+This guide only lists games that are good with two. Some were made for exactly two players. The rest are games that real players keep coming back to with two, week after week.
 
 ## At a glance
 

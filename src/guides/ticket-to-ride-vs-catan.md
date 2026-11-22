@@ -3,11 +3,14 @@ layout: layouts/post.njk
 title: Ticket to Ride vs Catan
 description: "Ticket to Ride vs Catan: which first board game should you buy? Players, time, age, difficulty and who each game is actually for, compared side by side."
 date: 2026-11-22
-image: /images/og-ticket-vs-catan.png
-imageAlt: "Ticket to Ride vs Catan: text graphic, Game Night Guide"
+image: /images/og-ticket-vs-catan.jpg
+imageAlt: "Wooden chess pieces in close-up on a board, Game Night Guide"
+photo: /images/photos/ticket-vs-catan.jpg
 ---
 
-Ticket to Ride and Catan are the two most recommended first board games in the world. If you ask any board game fan what to buy first, one of these two names will be in the answer. They are both gateway games, both easy to learn, and both have been introducing people to modern board games for more than twenty years.
+Ticket to Ride and Catan are the two most recommended first board games in the world. Ask any board game fan what to buy first, and one of these two names will be in the answer.
+
+They are both gateway games. Both are easy to learn. Both have been introducing people to modern board games for more than twenty years.
 
 They are not the same game, and they are not for the same people. This guide compares them on the facts, and tells you which one to buy for your table.
 

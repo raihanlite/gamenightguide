@@ -125,3 +125,33 @@ stay as they are.
   no ad code is installed.
 - **Google Search Console:** not added yet; add after the domain
   decision, per Md.
+
+## v2 visual redesign (22 Nov 2026)
+
+Warm game night identity: deep green #1E4D3B, warm cream #FBF9F4,
+warm ink #23201C, amber #E8A317 for calls to action only. Serif
+display headings (Georgia stack), clean sans body. One small CSS file,
+no new frameworks, no tracking.
+
+- **Photos:** all real photographs from Pexels (free licence), no AI
+  images. See `src/photo-credits.md` for every photographer and source
+  URL. Originals are downloaded at 1600px and optimised with
+  `scripts/make_photos.py` (1200x630 guide photos, 600x375 card
+  thumbs, 1600x900 home hero, all under 200KB).
+- **OG images:** 1200x630, photo on top with a deep green band and the
+  guide title in cream serif, built by `scripts/make_photos.py` in the
+  same layout as the Canva home OG design.
+- **Canva:** home OG design "Game Night Guide OG social sharing image",
+  https://canva.link/0zoz23l3t0ns5o1 (design DAHbn8g9fqM, hero photo
+  asset MAHbn64d9oQ). Two Canva limits found while making it: the
+  create-design API always returns a 940x788 canvas even when asked
+  for 1200x630, and its export endpoint answers "permission denied"
+  for these agent-created designs, so the design can be opened and
+  exported in the Canva editor by Md, but the shipped 1200x630 files
+  are the PIL versions in the same layout. The resize-design tool also
+  broke the layout (design DAHbn6m1BDM, do not use).
+- **Writing rules (Md, 22 Nov 2026):** no em dashes; commas, periods
+  and colons; hyphens only for compound words; en dashes only for
+  ranges; short paragraphs, usually 2 to 4 lines.
+- **Performance:** homepage images are lazy loaded below the fold
+  (hero is eager). Homepage total is under 1MB.

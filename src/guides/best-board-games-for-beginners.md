@@ -3,13 +3,16 @@ layout: layouts/post.njk
 title: Best Board Games for Beginners
 description: "The best board games for beginners: ten gateway games you can teach in under ten minutes and finish in under an hour. Ticket to Ride, Codenames, Azul, Carcassonne and more."
 date: 2026-11-22
-image: /images/og-beginners.png
-imageAlt: "Best board games for beginners: text graphic, Game Night Guide"
+image: /images/og-beginners.jpg
+imageAlt: "Friends laughing over a board game at a wooden table, Game Night Guide"
+photo: /images/photos/beginners.jpg
 ---
 
-A gateway game is a game that turns a non-player into a player. The definition is simple: it can be taught in under ten minutes, it can be finished in under an hour, and it forgives early mistakes. The best beginner games are Ticket to Ride, Codenames, Azul, Carcassonne and Sushi Go!, and this guide explains why, and which one to buy first.
+A gateway game turns a non-player into a player. It can be taught in under ten minutes. It finishes in under an hour. And it forgives early mistakes, so a bad first move does not ruin the night.
 
-If you have never played a modern board game, do not start with a game that takes three hours and has a 40-page rulebook.
+The best beginner games are Ticket to Ride, Codenames, Azul, Carcassonne and Sushi Go!. This guide explains why each one works, and which one to buy first.
+
+One warning before you start. Do not buy a game that takes three hours and has a 40-page rulebook. That game can wait. Tonight is for learning, laughing, and finishing what you started.
 
 ## At a glance
 

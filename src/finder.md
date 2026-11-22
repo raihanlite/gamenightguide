@@ -2,8 +2,8 @@
 layout: layouts/base.njk
 title: Board Game Finder
 description: "Answer four questions: players, time, budget, type, and find a board game that fits your table. Free, no sign-up, works offline."
-image: /images/og-finder.png
-imageAlt: "Board Game Finder: find your next board game"
+image: /images/og-finder.jpg
+imageAlt: "Friends playing Jenga together at a table, Game Night Guide"
 permalink: /finder/index.html
 ---
 

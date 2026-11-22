@@ -3,13 +3,16 @@ layout: layouts/post.njk
 title: Best Solo Board Games for Beginners
 description: "The best solo board games for beginners: gentle, affordable solo games to start with, and the expensive epics to leave for later. Cascadia, Friday, and what solo play is really like."
 date: 2026-11-22
-image: /images/og-solo-beginners.png
-imageAlt: "Best solo board games for beginners: text graphic, Game Night Guide"
+image: /images/og-solo-beginners.jpg
+imageAlt: "Hands setting up a board game with colourful pieces, Game Night Guide"
+photo: /images/photos/solo-beginners.jpg
 ---
 
-Playing a board game alone sounds strange until you try it. Then it makes sense: a quiet puzzle, no scheduling, no waiting for other people, and nobody watching you lose. Solo board gaming has seen a surge in popularity over the past few years, and the community is bigger than most people realise.
+Playing a board game alone sounds strange until you try it. Then it makes sense. A quiet puzzle, no scheduling, no waiting for other people, and nobody watching you lose.
 
-The BoardGameGeek 2026 People’s Choice Top Solo Games vote drew a record 2,139 voters, 2,168 unique games, and 32,584 votes.
+Solo play has grown fast, and the community is bigger than most people realise. The BoardGameGeek 2026 People's Choice Top Solo Games vote drew a record 2,139 voters, 2,168 unique games, and 32,584 votes.
+
+This guide starts with the gentle ones. The big, expensive games can wait until you know solo play is for you.
 
 But solo games have a trap. The games that solo players talk about most, Spirit Island, Terraforming Mars, Mage Knight, Gloomhaven, are big, expensive, and complicated. They are excellent games.
 

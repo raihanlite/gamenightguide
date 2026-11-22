@@ -3,15 +3,16 @@ layout: layouts/post.njk
 title: Best Board Games Under $30
 description: "How to buy a good board game for under $30: small-box games, what to check before you pay, and the budget picks that are actually worth it."
 date: 2026-11-22
-image: /images/og-under-30.png
-imageAlt: "Best board games under $30: text graphic, Game Night Guide"
+image: /images/og-under-30.jpg
+imageAlt: "Hands shuffling Uno cards during a game night, Game Night Guide"
+photo: /images/photos/under-30.jpg
 ---
 
-A good board game does not have to cost $60. Some of the best games ever made are small boxes with a handful of cards or tiles.
+A good board game does not have to cost $60. Some of the best games ever made are small boxes with a handful of cards or tiles, and they fit in a bag.
 
-One honest note first: we could not verify a live price for each game in this guide on 22 Nov 2026, and prices change often. So this guide does not quote exact prices. It tells you which games are small-box games usually sold in the budget range, how to check the real price, and what to avoid.
+One honest note first. We could not verify a live price for each game in this guide on 22 Nov 2026, and prices change often. So this guide does not quote exact prices.
 
-Check the live price before you buy, every time.
+It tells you which games are small-box games usually sold in the budget range, how to check the real price, and what to avoid. Check the live price before you buy, every time.
 
 ## Why small-box games are usually cheaper
 

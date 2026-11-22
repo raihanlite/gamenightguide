@@ -5,9 +5,12 @@ layout: layouts/base.njk
   <p class="crumbs"><a href="/">Home</a> › <a href="/guides/">Guides</a> › {{ title }}</p>
   <h1>{{ title }}</h1>
   <p class="meta">Published {{ page.date | readableDate }} · Last checked {{ site.lastChecked }}</p>
-  {% if image %}
+  {% if photo %}
+  <img class="hero" src="{{ photo }}" alt="{{ imageAlt or title }}" width="1200" height="630" loading="eager">
+  {% elif image %}
   <img class="hero" src="{{ image }}" alt="{{ imageAlt or title }}" width="1200" height="630" loading="eager">
   {% endif %}
+  {% if photo %}<p class="photo-credit">Photo: see <a href="/photo-credits/">photo credits</a>.</p>{% endif %}
   {{ content | safe }}
   <hr>
   <p class="disclosure-box">This guide contains affiliate links. If you buy through a link, we may earn a commission at no extra cost to you. Prices change. Check the live price at Amazon, Target or Barnes &amp; Noble before you buy. See our <a href="/affiliate-disclosure/">Affiliate Disclosure</a>.</p>

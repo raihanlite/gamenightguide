@@ -3,15 +3,16 @@ layout: layouts/post.njk
 title: Best Board Games for 2 Players Under $40
 description: "The best board games for 2 players under $40: games made for two, not games that just allow two. Patchwork, Jaipur, 7 Wonders Duel, Sky Team and more."
 date: 2026-11-22
-image: /images/og-2-players-under-40.png
-imageAlt: "Best board games for 2 players under $40: text graphic, Game Night Guide"
+image: /images/og-2-players-under-40.jpg
+imageAlt: "Friends playing a board game seen from above, Game Night Guide"
+photo: /images/photos/2-players-under-40.jpg
 ---
 
-Two-player games have a problem: most board games are made for three or more people, and the box still says “2–5 players”. A game that is good with four is often a bad game with two. The board feels empty and one player runs away with it.
+Two-player games have a problem. Most board games are made for three or more people, and the box still says "2 to 5 players". A game that is good with four is often a bad game with two. The board feels empty and one player runs away with it.
 
 This guide only lists games that are good with two. Some were made for exactly two players. The rest are games that real players actually play with two, week after week.
 
-Every game here is a small- or medium-box game, not a $60–$80 epic.
+Every game here is a small- or medium-box game, not a $60 to $80 epic.
 
 One honest note: we could not verify a live price for each game in this guide on 22 Nov 2026, and board game prices change often. The $40 in the title is a budget to shop to, not a promise that every game below costs under $40 today. Check the live price at Amazon, Target or Barnes &amp; Noble before you buy, every time.
 

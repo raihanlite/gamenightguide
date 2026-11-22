@@ -1,4 +1,4 @@
-/* Board Game Finder — vanilla JS, no dependencies. Data is embedded in the page as window.GAMES. */
+/* Board Game Finder: vanilla JS, no dependencies. Data is embedded in the page as window.GAMES. */
 (function () {
   var form = document.getElementById("finder-form");
   var out = document.getElementById("finder-results");
@@ -6,19 +6,19 @@
   if (!form || !out || !window.GAMES) return;
 
   function fmtPlayers(g) {
-    if (g.playersMin == null) return "—";
+    if (g.playersMin == null) return "n/a";
     if (g.playersMax == null) return g.playersMin + "+ players";
     if (g.playersMin === g.playersMax) return g.playersMin + " players";
     return g.playersMin + "–" + g.playersMax + " players";
   }
   function fmtTime(g) {
-    if (g.timeMin == null) return "—";
+    if (g.timeMin == null) return "n/a";
     if (g.timeMin === g.timeMax) return g.timeMin + " min";
     return g.timeMin + "–" + g.timeMax + " min";
   }
   function fmtPrice(g) {
-    if (g.priceUSD == null) return "Price not verified — check Amazon / Target before you buy.";
-    return "$" + g.priceUSD.toFixed(2) + " (checked 22 Nov 2026 — prices change, check the store before you buy).";
+    if (g.priceUSD == null) return "Price not verified. Check Amazon / Target before you buy.";
+    return "$" + g.priceUSD.toFixed(2) + " (checked 22 Nov 2026. Prices change, check the store before you buy).";
   }
   function esc(s) {
     return String(s).replace(/[&<>"']/g, function (c) {
@@ -58,7 +58,7 @@
 
     count.textContent = results.length + (results.length === 1 ? " game found" : " games found");
     if (!results.length) {
-      out.innerHTML = "<p>No games in our list match all of those filters. Try widening the time or budget — or start with the <a href=\"/gamenightguide/guides/best-board-games-for-beginners/\">beginners guide</a>.</p>";
+      out.innerHTML = "<p>No games in our list match all of those filters. Try widening the time or budget, or start with the <a href=\"/gamenightguide/guides/best-board-games-for-beginners/\">beginners guide</a>.</p>";
       return;
     }
     out.innerHTML = results.map(function (g) {

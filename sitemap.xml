@@ -1,38 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://raihanlite.github.io/gamenightguide/guides/</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://raihanlite.github.io/gamenightguide/finder/</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://raihanlite.github.io/gamenightguide/</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://raihanlite.github.io/gamenightguide/affiliate-disclosure/</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://raihanlite.github.io/gamenightguide/contact/</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://raihanlite.github.io/gamenightguide/disclaimer/</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://raihanlite.github.io/gamenightguide/about/</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
-    <loc>https://raihanlite.github.io/gamenightguide/privacy/</loc>
-    <lastmod>2026-11-21</lastmod>
-  </url>
-  <url>
     <loc>https://raihanlite.github.io/gamenightguide/guides/best-board-games-for-2-players-under-40/</loc>
     <lastmod>2026-11-22</lastmod>
   </url>
@@ -54,6 +22,38 @@
   </url>
   <url>
     <loc>https://raihanlite.github.io/gamenightguide/guides/ticket-to-ride-vs-catan/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://raihanlite.github.io/gamenightguide/finder/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://raihanlite.github.io/gamenightguide/guides/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://raihanlite.github.io/gamenightguide/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://raihanlite.github.io/gamenightguide/about/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://raihanlite.github.io/gamenightguide/affiliate-disclosure/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://raihanlite.github.io/gamenightguide/contact/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://raihanlite.github.io/gamenightguide/disclaimer/</loc>
+    <lastmod>2026-11-22</lastmod>
+  </url>
+  <url>
+    <loc>https://raihanlite.github.io/gamenightguide/privacy/</loc>
     <lastmod>2026-11-22</lastmod>
   </url>
 </urlset>

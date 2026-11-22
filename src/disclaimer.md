@@ -17,10 +17,6 @@ Where a price has not been verified, the guide says so. Do not treat an unverifi
 
 Nothing on this site is professional advice of any kind. Board games are a hobby. If a game is marked for a certain age, that is the publisher’s recommendation, not ours.
 
-## Affiliate links
-
-Some links on this site are affiliate links. See the [Affiliate Disclosure](/affiliate-disclosure/) for details.
-
 ## Liability
 
 We do our best to keep facts accurate, but we cannot guarantee that every fact is correct at the moment you read it. Use your own judgement, and check the store before you spend money.

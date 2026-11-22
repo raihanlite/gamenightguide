@@ -18,7 +18,7 @@ Most board game writing assumes you already know the hobby. We assume the opposi
 
 ## How we make money
 
-This site earns money in two ways: display ads, and affiliate commissions when you buy through a link to Amazon, Target or Barnes &amp; Noble. A commission costs you nothing extra. Read the full [Affiliate Disclosure](/affiliate-disclosure/).
+This site earns money from display ads.
 
 ## Corrections
 

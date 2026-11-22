@@ -76,8 +76,8 @@ main { padding: 0 0 48px; }
 
 /* Featured */
 .featured { display: grid; grid-template-columns: 1.05fr 1fr; gap: 36px; align-items: center; padding: 36px 0 8px; }
-.featured .f-img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); }
-.featured .f-img img { width: 100%; height: 100%; aspect-ratio: 4/3.4; object-fit: cover; transition: transform 0.5s ease; }
+.featured .f-img { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); aspect-ratio: 16/9; }
+.featured .f-img img { width: 100%; height: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: 45% center; transition: transform 0.5s ease; }
 .featured:hover .f-img img { transform: scale(1.02); }
 .kicker { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); margin: 0 0 12px; }
 .featured h2 { font-size: clamp(28px, 3.6vw, 40px); line-height: 1.12; margin: 0 0 12px; }
@@ -105,8 +105,9 @@ main { padding: 0 0 48px; }
 /* Card grid */
 .grid, .card-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px 24px; padding: 20px 0 10px; }
 .card { display: flex; flex-direction: column; border-radius: var(--radius); }
-.card .c-img { border-radius: var(--radius); overflow: hidden; margin-bottom: 14px; position: relative; }
-.card .c-img img { width: 100%; aspect-ratio: 3/2.1; object-fit: cover; transition: transform 0.5s ease; }
+.card .c-img { border-radius: var(--radius); overflow: hidden; margin-bottom: 14px; position: relative; aspect-ratio: 16/9; }
+.card .c-img img { width: 100%; height: 100%; aspect-ratio: 16/9; object-fit: cover; object-position: center; transition: transform 0.5s ease; }
+.card .kicker { margin: 0 0 8px; }
 .card:hover .c-img img { transform: scale(1.03); }
 .card h3 { font-size: 22px; line-height: 1.2; letter-spacing: -0.005em; margin: 0 0 8px; }
 .card h3 a { color: var(--ink); text-decoration: none; }
@@ -173,7 +174,7 @@ main { padding: 0 0 48px; }
 .next-card .t:hover { text-decoration: underline; text-decoration-color: var(--accent); text-underline-offset: 3px; }
 
 /* Kept components: versus figure, tables, disclosure, finder */
-table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 15px; display: block; overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; margin: 16px 0 24px; font-size: 15px; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
 th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
 th { background: var(--surface); font-size: 14px; }
 ul, ol { padding-left: 22px; margin: 0 0 16px; }

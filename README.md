@@ -1,16 +1,16 @@
 # Game Night Guide
 
-Board games for beginners, couples and families — in plain English.
+Board games for beginners, couples and families, in plain English.
 English only, USA only. No Bangla, no Bangladesh content.
 
 - **Site (live):** https://raihanlite.github.io/gamenightguide/
-  — GitHub Pages, repo `raihanlite/gamenightguide`.
+  Hosted on GitHub Pages, repo `raihanlite/gamenightguide`.
 - **How deploy works (22 Nov 2026):** GitHub Pages serves the
   `gh-pages` branch (built output only). Two pushes per update:
   source → `main`, then the built `_site/` folder → `gh-pages`.
   The API token used to push has only the `repo` scope, so it
   **cannot** push files under `.github/workflows/` (GitHub answers
-  404 for workflow paths without the `workflow` scope) — that is
+  404 for workflow paths without the `workflow` scope). That is
   why there is no Actions auto-deploy yet. A ready-made
   `.github/workflows/deploy.yml` is kept in the local source only
   (not in the repo). To switch to Actions builds later: either add
@@ -37,8 +37,8 @@ npm run serve    # build + local server with live reload
 npm run images   # regenerate OG images (needs Python + PIL)
 ```
 
-Node v24 / npm 10 used here. Output is a plain static folder (`_site/`)
-— it can be hosted anywhere that serves static files.
+Node v24 / npm 10 used here. Output is a plain static folder (`_site/`).
+It can be hosted anywhere that serves static files.
 
 ## Structure
 
@@ -75,11 +75,11 @@ scripts/make_images.py   generates 1200×630 OG PNGs with PIL
 
 1. Edit `url` in `src/_data/site.json` (and `email` if it changes).
 2. Rebuild. Canonical URLs, Open Graph URLs, JSON-LD, sitemap and RSS
-   all read from that one value — nothing else needs editing.
+   all read from that one value, nothing else needs editing.
 
 ## How facts are handled (read this before editing content)
 
-- **Prices:** only three prices were verified on 22 Nov 2026 —
+- **Prices:** only three prices were verified on 22 Nov 2026:
   Spirit Island $57.99, Terraforming Mars $79.99, Mage Knight $79.99.
   Every other price in the site is explicitly marked “not verified”.
   Never invent a price. Re-check a price at the store, date-stamp it,
@@ -90,6 +90,16 @@ scripts/make_images.py   generates 1200×630 OG PNGs with PIL
   Everything else is blank on purpose.
 - **Players / time / age:** from the research file only.
 
+## Writing style
+
+No em dashes anywhere. Use commas for natural pauses, periods to
+separate thoughts, and colons to introduce explanations. Hyphens are
+only for compound words, and en dashes only for ranges.
+
+Keep paragraphs short, usually 2 to 4 lines. Break long paragraphs
+into smaller sections. Tables, lists, headings, checklists and FAQs
+stay as they are.
+
 ## What is NOT verified yet
 
 - Exact search volume / KD per keyword. The research file gives verified
@@ -99,19 +109,19 @@ scripts/make_images.py   generates 1200×630 OG PNGs with PIL
   KD 54). Tier 1 order was ranked on competition evidence, not KD.
   Before writing new articles, run one keyword-tool export
   (Ahrefs / Semrush / KWFinder) for the exact keyword.
-- Amazon Associates commission % for board games — not verified.
+- Amazon Associates commission % for board games: not verified.
   Do not quote a commission rate anywhere on the site.
-- Live prices for 19 of the 22 games in `games.json` — marked null.
+- Live prices for 19 of the 22 games in `games.json`, marked null.
 - Affiliate programme sign-ups (Amazon, Target, Barnes &amp; Noble)
   are not done. Links currently go to public store pages without an
   affiliate tag; the disclosure page says so.
 
 ## Decisions still needed from Md
 
-- **Domain name** — gamenightguide.com is a placeholder, not bought.
+- **Domain name:** gamenightguide.com is a placeholder, not bought.
   Site is live on the GitHub Pages URL above until a domain is decided.
 - **Affiliate account sign-ups** (Amazon Associates, Target, Barnes &amp; Noble).
-- **AdSense** — apply only after the site has content and traffic history;
+- **AdSense:** apply only after the site has content and traffic history;
   no ad code is installed.
-- **Google Search Console** — not added yet; add after the domain
+- **Google Search Console:** not added yet; add after the domain
   decision, per Md.

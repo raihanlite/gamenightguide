@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Disclaimer
-description: Disclaimer for Game Night Guide — game facts and prices are checked on a date, and they change.
+description: "Disclaimer for Game Night Guide: game facts and prices are checked on a date, and they change."
 permalink: /disclaimer/index.html
 ---
 
@@ -9,7 +9,7 @@ Last updated: 22 Nov 2026.
 
 ## Facts and prices change
 
-Game facts on this site — player counts, play times, age ranges, BoardGameGeek ratings and prices — were checked on the date shown on each page (last checked 22 Nov 2026). Publishers release new editions, stores change prices, and ratings move. Always check the publisher’s page or the store listing before you buy.
+Game facts on this site, player counts, play times, age ranges, BoardGameGeek ratings and prices, were checked on the date shown on each page (last checked 22 Nov 2026). Publishers release new editions, stores change prices, and ratings move. Always check the publisher’s page or the store listing before you buy.
 
 Where a price has not been verified, the guide says so. Do not treat an unverified price as a quote.
 

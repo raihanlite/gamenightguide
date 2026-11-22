@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{% if page.url == "/" %}{{ site.name }} — {{ site.tagline }}{% elif title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }} — {{ site.tagline }}{% endif %}</title>
+<title>{% if page.url == "/" %}{{ site.name }}: {{ site.tagline }}{% elif title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}: {{ site.tagline }}{% endif %}</title>
 <meta name="description" content="{{ description or site.description }}">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
 <meta property="og:type" content="{% if layout == 'layouts/post.njk' %}article{% else %}website{% endif %}">
@@ -76,13 +76,13 @@
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <p><strong>{{ site.name }}</strong> — {{ site.tagline }}</p>
+    <p><strong>{{ site.name }}</strong>: {{ site.tagline }}</p>
     <p>
       <a href="/about/">About</a> · <a href="/contact/">Contact</a> ·
       <a href="/privacy/">Privacy</a> · <a href="/disclaimer/">Disclaimer</a> ·
       <a href="/affiliate-disclosure/">Affiliate Disclosure</a> · <a href="/feed.xml">RSS</a>
     </p>
-    <p class="muted">Prices change. Always check the live price at the store before you buy. Game facts last checked {{ site.lastChecked }}. This site earns a commission on some links, at no extra cost to you — see the <a href="/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
+    <p class="muted">Prices change. Always check the live price at the store before you buy. Game facts last checked {{ site.lastChecked }}. This site earns a commission on some links, at no extra cost to you. See the <a href="/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
   </div>
 </footer>
 </body>

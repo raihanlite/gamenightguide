@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Privacy Policy
-description: Privacy policy for Game Night Guide — what data this site collects (very little) and how it is used.
+description: "Privacy policy for Game Night Guide: what data this site collects (very little) and how it is used."
 permalink: /privacy/index.html
 ---
 
@@ -21,7 +21,9 @@ The Board Game Finder runs entirely in your browser. Your choices are never sent
 
 ## Links to other sites
 
-Our guides link to Amazon, Target, Barnes &amp; Noble and other stores. Those sites have their own privacy policies and may set cookies when you visit them. We have no control over that — read their policies if it matters to you.
+Our guides link to Amazon, Target, Barnes &amp; Noble and other stores. Those sites have their own privacy policies and may set cookies when you visit them. We have no control over that.
+
+Read their policies if it matters to you.
 
 ## Advertising
 

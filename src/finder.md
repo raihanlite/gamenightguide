@@ -1,15 +1,15 @@
 ---
 layout: layouts/base.njk
 title: Board Game Finder
-description: Answer four questions — players, time, budget, type — and find a board game that fits your table. Free, no sign-up, works offline.
+description: "Answer four questions: players, time, budget, type, and find a board game that fits your table. Free, no sign-up, works offline."
 image: /images/og-finder.png
-imageAlt: Board Game Finder — find your next board game
+imageAlt: "Board Game Finder: find your next board game"
 permalink: /finder/index.html
 ---
 
 <h1>Board Game Finder</h1>
 
-<p class="lede">Four questions, one short list. The Finder only uses games from our own list — the games we have written about and checked.</p>
+<p class="lede">Four questions, one short list. The Finder only uses games from our own list, the games we have written about and checked.</p>
 
 <form id="finder-form">
   <label for="f-players">How many players?</label>
@@ -62,7 +62,7 @@ window.GAMES = {{ games | dump | safe }};
 ## How the Finder works
 
 - **Players:** a game matches if your group size is inside its player range. A game listed as “2–5 players” matches 2, 3–4 and 5+.
-- **Budget:** we only filter on prices we have actually verified (checked 22 Nov 2026). Most games in our list have no verified price yet, so they only appear when “Include games whose price we have not verified” is ticked — or when you pick “Any budget”. Prices change; always check the live price at the store before you buy.
+- **Budget:** we only filter on prices we have actually verified (checked 22 Nov 2026). Most games in our list have no verified price yet, so they only appear when “Include games whose price we have not verified” is ticked, or when you pick “Any budget”. Prices change; always check the live price at the store before you buy.
 - **No tracking:** the Finder runs entirely in your browser. Nothing you pick is sent anywhere.
 
 Not sure where to start? Read the [beginners guide](/guides/best-board-games-for-beginners/) first.

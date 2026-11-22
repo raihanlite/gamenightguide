@@ -52,7 +52,7 @@ module.exports = function (eleventyConfig) {
     // Project Pages URL: https://raihanlite.github.io/gamenightguide/
     // Verified with Eleventy 3.1.8: pathPrefix makes page.url include
     // the prefix (so canonical/sitemap/feed URLs are correct) but the
-    // built files still land at _site/ root — so the deploy workflow
+    // built files still land at _site/ root, so the deploy workflow
     // uploads _site as the Pages artifact, unchanged.
     pathPrefix: "/gamenightguide/",
   };

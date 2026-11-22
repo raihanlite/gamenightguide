@@ -1,7 +1,7 @@
 ---
 layout: layouts/page.njk
 title: Affiliate Disclosure
-description: Affiliate disclosure for Game Night Guide — how this site earns a commission, and what that does and does not change.
+description: "Affiliate disclosure for Game Night Guide: how this site earns a commission, and what that does and does not change."
 permalink: /affiliate-disclosure/index.html
 ---
 
@@ -12,7 +12,7 @@ Game Night Guide is reader-supported. Some links on this site are affiliate link
 ## What that means for you
 
 - It costs you nothing extra. The price you pay is the store’s price.
-- A commission does not change which games we recommend. Games are picked by player count, play time, age fit and community ratings — not by commission.
+- A commission does not change which games we recommend. Games are picked by player count, play time, age fit and community ratings, not by commission.
 - We do not accept paid placements. A publisher or store cannot pay to get a game onto a list.
 
 ## What we do not know yet

@@ -44,11 +44,13 @@ GUIDES = {
                  "Small boxes, big fun, honest prices."),
     "solo-beginners": ("6333907", "Best Solo Board Games for Beginners",
                        "Start gentle. Leave the epics for later."),
-    "ticket-vs-catan": ("6114957", "Ticket to Ride vs Catan",
-                        "Which first game should you buy?"),
     "finder": ("8111299", "Board Game Finder",
                "Four questions. One short list."),
 }
+# Note: "ticket-vs-catan" is not in GUIDES any more. Its hero, thumb and OG
+# now come from the owner-supplied split image, made by
+# scripts/make_ticket_vs_catan.py. Do not add it back here, or a rerun of
+# this script would overwrite those files with the old chess photo.
 
 
 def centre_crop(im, tw, th, fx=0.5, fy=0.5):

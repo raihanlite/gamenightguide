@@ -5,7 +5,7 @@ description: "Ticket to Ride vs Catan: which first board game should you buy? Pl
 date: 2026-11-22
 topic: Versus
 image: /images/og-ticket-vs-catan.jpg
-imageAlt: "Wooden chess pieces in close-up on a board, Game Night Guide"
+imageAlt: "Catan board on the left and Ticket to Ride Europe board on the right, with the title Catan vs Ticket to Ride at the bottom"
 photo: /images/photos/ticket-vs-catan.jpg
 ---
 

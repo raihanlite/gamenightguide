@@ -155,7 +155,7 @@ main { padding: 0 0 48px; }
 .art-meta { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding: 12px 0; }
 .avatar { width: 38px; height: 38px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 14px; flex: none; }
 .art-hero { max-width: 920px; margin: 30px auto 0; padding: 0 20px; }
-.art-hero img { width: 100%; border-radius: var(--radius); aspect-ratio: 16/9; object-fit: cover; }
+.art-hero img { width: 100%; height: auto; border-radius: var(--radius); aspect-ratio: 16/9; object-fit: cover; }
 .art-hero figcaption { font-size: 12.5px; color: var(--ink-3); margin-top: 10px; text-align: center; }
 .video { position: relative; aspect-ratio: 16/9; margin: 24px 0 0; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--surface-2); }
 .video iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }

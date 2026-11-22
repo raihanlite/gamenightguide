@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
 <title>Game Night Guide: Board games for beginners, couples and families, in plain English.</title>
 <meta name="description" content="Board games for beginners, couples and families, in plain English. What to buy first, what plays well with two people, and what works for a family game night.">
 <link rel="canonical" href="https://raihanlite.github.io/gamenightguide/">
@@ -18,7 +19,10 @@
 <meta name="twitter:title" content="Game Night Guide">
 <meta name="twitter:description" content="Board games for beginners, couples and families, in plain English. What to buy first, what plays well with two people, and what works for a family game night.">
 <meta name="twitter:image" content="https://raihanlite.github.io/gamenightguide/images/og-home.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%231E4D3B'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b23a1d'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/gamenightguide/assets/style.css">
 <link rel="alternate" type="application/rss+xml" title="Game Night Guide" href="/gamenightguide/feed.xml">
 
@@ -34,115 +38,204 @@
 
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="/gamenightguide/">Game Night <span>Guide</span></a>
-    <nav aria-label="Main">
+<div class="progress" id="progress" aria-hidden="true"></div>
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="wordmark" href="/gamenightguide/">Game Night Guide<em>.</em></a>
+    <nav class="main" aria-label="Main">
       <a href="/gamenightguide/guides/">Guides</a>
       <a href="/gamenightguide/finder/">Finder</a>
       <a href="/gamenightguide/about/">About</a>
     </nav>
   </div>
 </header>
-<main class="wrap">
-<div class="home-hero">
-  <img src="/gamenightguide/images/photos/hero-home.jpg" alt="Friends playing a board game at a wooden table on a warm evening" width="1600" height="900" loading="eager">
-  <div class="home-hero-text">
-    <h1>Board games, in plain English.</h1>
-    <p class="lede">Buy one game tonight. Play it tonight. We tell you how many players it needs, how long it takes, what age it suits, and what it costs.</p>
-    <p><a class="btn" href="/gamenightguide/finder/">Find your game</a> <a class="btn-ghost" href="/gamenightguide/guides/best-board-games-for-beginners/">Start with beginners</a></p>
+<main>
+<div class="wrap">
+  <section class="masthead">
+    <h1>Buy one game <em>tonight</em>, play it tonight.</h1>
+    <p>Plain English board game guides for the USA. Players, time, age and price, checked, so you can pick one game and start playing.</p>
+    <hr class="mast-rule"><hr class="rule2">
+  </section>
+  <section class="featured">
+    <div>
+      <p class="kicker">Featured · Couples</p>
+      <h2><a href="/gamenightguide/guides/best-board-games-for-couples/" style="text-decoration:none">Best Board Games for Couples</a></h2>
+      <p class="dek">The best board games for two people: date-night picks that are actually good with two, not games that just tolerate two players. Patchwork, Jaipur, 7 Wonders Duel and more.</p>
+      <p class="meta">22 Nov 2026<span class="dot">Last checked 22 Nov 2026</span></p>
+      <a class="read-link" href="/gamenightguide/guides/best-board-games-for-couples/">Read the guide →</a>
+    </div>
+    <div class="f-img"><a href="/gamenightguide/guides/best-board-games-for-couples/"><img src="/gamenightguide/images/photos/couples.jpg" alt="A young couple playing chess together at home" width="1200" height="630" loading="eager"></a></div>
+  </section>
+  <section class="controls" id="topics">
+    <div class="controls-row">
+      <h2 id="latest">Latest guides</h2>
+      <div class="searchbox">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="search" id="searchInput" placeholder="Search guides" aria-label="Search guides">
+      </div>
+    </div>
+    <div class="chips" id="chipRow" role="group" aria-label="Filter by topic">
+      <button type="button" class="chip" data-topic="All" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-topic="Beginners" aria-pressed="false">Beginners</button>
+      <button type="button" class="chip" data-topic="Couples" aria-pressed="false">Couples</button>
+      <button type="button" class="chip" data-topic="2 players" aria-pressed="false">2 players</button>
+      <button type="button" class="chip" data-topic="Solo" aria-pressed="false">Solo</button>
+      <button type="button" class="chip" data-topic="Budget" aria-pressed="false">Budget</button>
+      <button type="button" class="chip" data-topic="Versus" aria-pressed="false">Versus</button>
+    </div>
+    <p class="result-count" id="resultCount" aria-live="polite">6 guides</p>
+  </section>
+  <section class="grid" id="postGrid" aria-label="Guides">
+<p><article class="card" data-topic="2 players" data-search="Best Board Games for 2 Players Under $40 The best board games for 2 players under $40: games made for two, not games that just allow two. Patchwork, Jaipur, 7 Wonders Duel, Sky Team and more. 2 players">
+<div class="c-img"><a href="/gamenightguide/guides/best-board-games-for-2-players-under-40/"><img src="/gamenightguide/images/photos/2-players-under-40-thumb.jpg" alt="Friends playing a board game seen from above, Game Night Guide" width="600" height="375" loading="lazy"></a></div>
+<p class="kicker">2 players</p>
+<h3><a href="/gamenightguide/guides/best-board-games-for-2-players-under-40/">Best Board Games for 2 Players Under $40</a></h3>
+<p class="dek">The best board games for 2 players under $40: games made for two, not games that just allow two. Patchwork, Jaipur, 7 Wonders Duel, Sky Team and more.</p>
+<div class="foot"><span class="meta">Nov 22, 2026</span></div>
+</article></p>
+<p><article class="card" data-topic="Beginners" data-search="Best Board Games for Beginners The best board games for beginners: ten gateway games you can teach in under ten minutes and finish in under an hour. Ticket to Ride, Codenames, Azul, Carcassonne and more. Beginners">
+<div class="c-img"><a href="/gamenightguide/guides/best-board-games-for-beginners/"><img src="/gamenightguide/images/photos/beginners-thumb.jpg" alt="Friends laughing over a board game at a wooden table, Game Night Guide" width="600" height="375" loading="lazy"></a></div>
+<p class="kicker">Beginners</p>
+<h3><a href="/gamenightguide/guides/best-board-games-for-beginners/">Best Board Games for Beginners</a></h3>
+<p class="dek">The best board games for beginners: ten gateway games you can teach in under ten minutes and finish in under an hour. Ticket to Ride, Codenames, Azul, Carcassonne and more.</p>
+<div class="foot"><span class="meta">Nov 22, 2026</span></div>
+</article></p>
+<p><article class="card" data-topic="Couples" data-search="Best Board Games for Couples The best board games for two people: date-night picks that are actually good with two, not games that just tolerate two players. Patchwork, Jaipur, 7 Wonders Duel and more. Couples">
+<div class="c-img"><a href="/gamenightguide/guides/best-board-games-for-couples/"><img src="/gamenightguide/images/photos/couples-thumb.jpg" alt="A young couple playing chess together at home, Game Night Guide" width="600" height="375" loading="lazy"></a></div>
+<p class="kicker">Couples</p>
+<h3><a href="/gamenightguide/guides/best-board-games-for-couples/">Best Board Games for Couples</a></h3>
+<p class="dek">The best board games for two people: date-night picks that are actually good with two, not games that just tolerate two players. Patchwork, Jaipur, 7 Wonders Duel and more.</p>
+<div class="foot"><span class="meta">Nov 22, 2026</span></div>
+</article></p>
+<p><article class="card" data-topic="Budget" data-search="Best Board Games Under $30 How to buy a good board game for under $30: small-box games, what to check before you pay, and the budget picks that are actually worth it. Budget">
+<div class="c-img"><a href="/gamenightguide/guides/best-board-games-under-30/"><img src="/gamenightguide/images/photos/under-30-thumb.jpg" alt="Hands shuffling Uno cards during a game night, Game Night Guide" width="600" height="375" loading="lazy"></a></div>
+<p class="kicker">Budget</p>
+<h3><a href="/gamenightguide/guides/best-board-games-under-30/">Best Board Games Under $30</a></h3>
+<p class="dek">How to buy a good board game for under $30: small-box games, what to check before you pay, and the budget picks that are actually worth it.</p>
+<div class="foot"><span class="meta">Nov 22, 2026</span></div>
+</article></p>
+<p><article class="card" data-topic="Solo" data-search="Best Solo Board Games for Beginners The best solo board games for beginners: gentle, affordable solo games to start with, and the expensive epics to leave for later. Cascadia, Friday, and what solo play is really like. Solo">
+<div class="c-img"><a href="/gamenightguide/guides/best-solo-board-games-for-beginners/"><img src="/gamenightguide/images/photos/solo-beginners-thumb.jpg" alt="Hands setting up a board game with colourful pieces, Game Night Guide" width="600" height="375" loading="lazy"></a></div>
+<p class="kicker">Solo</p>
+<h3><a href="/gamenightguide/guides/best-solo-board-games-for-beginners/">Best Solo Board Games for Beginners</a></h3>
+<p class="dek">The best solo board games for beginners: gentle, affordable solo games to start with, and the expensive epics to leave for later. Cascadia, Friday, and what solo play is really like.</p>
+<div class="foot"><span class="meta">Nov 22, 2026</span></div>
+</article></p>
+<p><article class="card" data-topic="Versus" data-search="Ticket to Ride vs Catan Ticket to Ride vs Catan: which first board game should you buy? Players, time, age, difficulty and who each game is actually for, compared side by side. Versus">
+<div class="c-img"><a href="/gamenightguide/guides/ticket-to-ride-vs-catan/"><img src="/gamenightguide/images/photos/ticket-vs-catan-thumb.jpg" alt="Wooden chess pieces in close-up on a board, Game Night Guide" width="600" height="375" loading="lazy"></a></div>
+<p class="kicker">Versus</p>
+<h3><a href="/gamenightguide/guides/ticket-to-ride-vs-catan/">Ticket to Ride vs Catan</a></h3>
+<p class="dek">Ticket to Ride vs Catan: which first board game should you buy? Players, time, age, difficulty and who each game is actually for, compared side by side.</p>
+<div class="foot"><span class="meta">Nov 22, 2026</span></div>
+</article></p>
+  </section>
+  <div class="empty" id="emptyState" hidden>
+    <strong>Nothing matches that, yet.</strong>
+    Try a different word, or browse a topic instead.
+    <br><button type="button" id="clearFilters">Show all guides</button>
   </div>
+  <div class="callout">
+    <h2>Find your game in 30 seconds</h2>
+    <p>Answer four questions: players, time, budget, type. The Finder narrows our list to the games that fit your table.</p>
+    <p><a class="btn" href="/gamenightguide/finder/">Try the Board Game Finder</a></p>
+  </div>
+  <h2>How to choose your first game</h2>
+  <ol>
+    <li><strong>Count the players.</strong> Most game nights are 2 people, or 3 to 4. A game that says "2 to 5 players" is not always good with 2.</li>
+    <li><strong>Check the time.</strong> A 30-minute game gets played. A 3-hour game sits on the shelf. Start under 60 minutes.</li>
+    <li><strong>Learn the rules in 10 minutes.</strong> The best first games, Ticket to Ride, Codenames, Azul, Carcassonne, Sushi Go!, are teachable in under ten minutes and finish in under an hour.</li>
+    <li><strong>Buy one, not five.</strong> One good gateway game beats a shelf of games nobody has learned yet.</li>
+  </ol>
+  <section class="split">
+    <div>
+      <h2>Start here</h2>
+      <ol class="start-list">
+        <li><span class="num">1.</span><span><a href="/gamenightguide/guides/best-board-games-for-beginners/"><span class="t">Best board games for beginners</span><span class="m">Beginners · Ten easy games</span></a></span></li>
+        <li><span class="num">2.</span><span><a href="/gamenightguide/guides/best-board-games-for-couples/"><span class="t">Best board games for couples</span><span class="m">Couples · Date night games</span></a></span></li>
+        <li><span class="num">3.</span><span><a href="/gamenightguide/guides/best-board-games-for-2-players-under-40/"><span class="t">Best board games for 2 players under $40</span><span class="m">2 players · Games made for two</span></a></span></li>
+      </ol>
+    </div>
+    <div class="about-box" id="about">
+      <h2>About this site</h2>
+      <p><strong>Game Night Guide</strong> is a small, independent site about board games. Every guide starts with the facts that matter at the table: players, time, age, and price.</p>
+      <p>We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.</p>
+      <p>Pick a guide above, or use the Finder to narrow the list to your table.</p>
+    </div>
+  </section>
+  <div class="standards">
+    <h2>How we pick games</h2>
+    <p>We only recommend games we can describe with facts: players, time, age, and a BoardGameGeek rating where one exists. We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.</p>
+    <p>Game facts were last checked 22 Nov 2026. Prices change often, so always check the live price at the store before you buy.</p>
+  </div>
+  <h2>A note on prices and facts</h2>
+  <p>Board game prices change often, and a game's price at Amazon is not the same as at Target. We only publish a price when we have verified it, and we date-stamp every check. Where a price is not verified, we say so.</p>
+  <p>See the note at the top of each guide. Game facts (players, time, age, BoardGameGeek rating) were last checked 22 Nov 2026.</p>
 </div>
-<h2>Start here: who is playing?</h2>
-<div class="card-grid three">
-  <div class="card">
-    <img src="/gamenightguide/images/photos/beginners-thumb.jpg" alt="Friends laughing over a board game at a wooden table" width="600" height="375" loading="lazy">
-    <p class="tag">First game</p>
-    <h3><a href="/gamenightguide/guides/best-board-games-for-beginners/">Beginners</a></h3>
-    <p>Never played a modern board game? Ten easy games, all learnable in about ten minutes.</p>
-  </div>
-  <div class="card">
-    <img src="/gamenightguide/images/photos/couples-thumb.jpg" alt="A young couple playing chess together at home" width="600" height="375" loading="lazy">
-    <p class="tag">Date night</p>
-    <h3><a href="/gamenightguide/guides/best-board-games-for-couples/">Couples</a></h3>
-    <p>Games made for two, not games that just allow two. Patchwork, Jaipur and 7 Wonders Duel lead the list.</p>
-  </div>
-  <div class="card">
-    <img src="/gamenightguide/images/photos/2-players-under-40-thumb.jpg" alt="Friends playing a board game seen from above" width="600" height="375" loading="lazy">
-    <p class="tag">Two players</p>
-    <h3><a href="/gamenightguide/guides/best-board-games-for-2-players-under-40/">2 players under $40</a></h3>
-    <p>Two-player games that are actually good with two, at a price you can plan around.</p>
-  </div>
-</div>
-<div class="callout">
-  <h2>Find your game in 30 seconds</h2>
-  <p>Answer four questions: players, time, budget, type. The Finder narrows our list to the games that fit your table.</p>
-  <p><a class="btn" href="/gamenightguide/finder/">Try the Board Game Finder</a></p>
-</div>
-<h2>How to choose your first game</h2>
-<ol>
-<li><strong>Count the players.</strong> Most game nights are 2 people, or 3 to 4. A game that says &quot;2 to 5 players&quot; is not always good with 2.</li>
-<li><strong>Check the time.</strong> A 30-minute game gets played. A 3-hour game sits on the shelf. Start under 60 minutes.</li>
-<li><strong>Learn the rules in 10 minutes.</strong> The best first games, Ticket to Ride, Codenames, Azul, Carcassonne, Sushi Go!, are teachable in under ten minutes and finish in under an hour.</li>
-<li><strong>Buy one, not five.</strong> One good gateway game beats a shelf of games nobody has learned yet.</li>
-</ol>
-<h2>How we pick games</h2>
-<p>We only recommend games we can describe with facts: players, time, age, and a BoardGameGeek rating where one exists. We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.</p>
-<p>Game facts were last checked 22 Nov 2026. Prices change often, so always check the live price at the store before you buy.</p>
-<h2>All guides</h2>
-<div class="card-grid">
-  <div class="card">
-    <img src="/gamenightguide/images/photos/2-players-under-40-thumb.jpg" alt="Friends playing a board game seen from above, Game Night Guide" width="600" height="375" loading="lazy">
-    <h3><a href="/gamenightguide/guides/best-board-games-for-2-players-under-40/">Best Board Games for 2 Players Under $40</a></h3>
-    <p>The best board games for 2 players under $40: games made for two, not games that just allow two. Patchwork, Jaipur, 7 Wonders Duel, Sky Team and more.</p>
-    <p class="muted">Nov 22, 2026 · Last checked 22 Nov 2026</p>
-  </div>
-  <div class="card">
-    <img src="/gamenightguide/images/photos/beginners-thumb.jpg" alt="Friends laughing over a board game at a wooden table, Game Night Guide" width="600" height="375" loading="lazy">
-    <h3><a href="/gamenightguide/guides/best-board-games-for-beginners/">Best Board Games for Beginners</a></h3>
-    <p>The best board games for beginners: ten gateway games you can teach in under ten minutes and finish in under an hour. Ticket to Ride, Codenames, Azul, Carcassonne and more.</p>
-    <p class="muted">Nov 22, 2026 · Last checked 22 Nov 2026</p>
-  </div>
-  <div class="card">
-    <img src="/gamenightguide/images/photos/couples-thumb.jpg" alt="A young couple playing chess together at home, Game Night Guide" width="600" height="375" loading="lazy">
-    <h3><a href="/gamenightguide/guides/best-board-games-for-couples/">Best Board Games for Couples</a></h3>
-    <p>The best board games for two people: date-night picks that are actually good with two, not games that just tolerate two players. Patchwork, Jaipur, 7 Wonders Duel and more.</p>
-    <p class="muted">Nov 22, 2026 · Last checked 22 Nov 2026</p>
-  </div>
-  <div class="card">
-    <img src="/gamenightguide/images/photos/under-30-thumb.jpg" alt="Hands shuffling Uno cards during a game night, Game Night Guide" width="600" height="375" loading="lazy">
-    <h3><a href="/gamenightguide/guides/best-board-games-under-30/">Best Board Games Under $30</a></h3>
-    <p>How to buy a good board game for under $30: small-box games, what to check before you pay, and the budget picks that are actually worth it.</p>
-    <p class="muted">Nov 22, 2026 · Last checked 22 Nov 2026</p>
-  </div>
-  <div class="card">
-    <img src="/gamenightguide/images/photos/solo-beginners-thumb.jpg" alt="Hands setting up a board game with colourful pieces, Game Night Guide" width="600" height="375" loading="lazy">
-    <h3><a href="/gamenightguide/guides/best-solo-board-games-for-beginners/">Best Solo Board Games for Beginners</a></h3>
-    <p>The best solo board games for beginners: gentle, affordable solo games to start with, and the expensive epics to leave for later. Cascadia, Friday, and what solo play is really like.</p>
-    <p class="muted">Nov 22, 2026 · Last checked 22 Nov 2026</p>
-  </div>
-  <div class="card">
-    <img src="/gamenightguide/images/photos/ticket-vs-catan-thumb.jpg" alt="Wooden chess pieces in close-up on a board, Game Night Guide" width="600" height="375" loading="lazy">
-    <h3><a href="/gamenightguide/guides/ticket-to-ride-vs-catan/">Ticket to Ride vs Catan</a></h3>
-    <p>Ticket to Ride vs Catan: which first board game should you buy? Players, time, age, difficulty and who each game is actually for, compared side by side.</p>
-    <p class="muted">Nov 22, 2026 · Last checked 22 Nov 2026</p>
-  </div>
-</div>
-<h2>A note on prices and facts</h2>
-<p>Board game prices change often, and a game's price at Amazon is not the same as at Target. We only publish a price when we have verified it, and we date-stamp every check. Where a price is not verified, we say so.</p>
-<p>See the note at the top of each guide. Game facts (players, time, age, BoardGameGeek rating) were last checked 22 Nov 2026.</p>
+<script>
+(function () {
+  var input = document.getElementById("searchInput");
+  var grid = document.getElementById("postGrid");
+  var count = document.getElementById("resultCount");
+  var empty = document.getElementById("emptyState");
+  var chips = document.querySelectorAll("#chipRow .chip");
+  var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
+  var activeTopic = "All";
+  var query = "";
+  function render() {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var inTopic = activeTopic === "All" || card.getAttribute("data-topic") === activeTopic;
+      var hay = (card.getAttribute("data-search") || "").toLowerCase();
+      var ok = inTopic && (!query || hay.indexOf(query.toLowerCase()) !== -1);
+      card.style.display = ok ? "" : "none";
+      if (ok) shown += 1;
+    });
+    empty.hidden = shown !== 0;
+    grid.style.display = shown === 0 ? "none" : "";
+    count.textContent = shown === cards.length ? cards.length + " guides" : shown + (shown === 1 ? " guide" : " guides") + " matching";
+    chips.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-topic") === activeTopic ? "true" : "false"); });
+  }
+  chips.forEach(function (b) {
+    b.addEventListener("click", function () { activeTopic = b.getAttribute("data-topic"); render(); });
+  });
+  input.addEventListener("input", function () { query = input.value.trim(); render(); });
+  document.getElementById("clearFilters").addEventListener("click", function () {
+    query = ""; input.value = ""; activeTopic = "All"; render();
+  });
+  render();
+})();
+</script>
 
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <p><strong>Game Night Guide</strong>: Board games for beginners, couples and families, in plain English.</p>
-    <p>
-      <a href="/gamenightguide/about/">About</a> · <a href="/gamenightguide/contact/">Contact</a> ·
-      <a href="/gamenightguide/privacy/">Privacy</a> · <a href="/gamenightguide/disclaimer/">Disclaimer</a> ·
-      <a href="/gamenightguide/affiliate-disclosure/">Affiliate Disclosure</a> · <a href="/gamenightguide/feed.xml">RSS</a> · <a href="/gamenightguide/photo-credits/">Photo credits</a>
+    <div class="foot-grid">
+      <div>
+        <div class="wm">Game Night Guide.</div>
+        <p>Board games for beginners, couples and families, in plain English.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="/gamenightguide/guides/">Guides</a> &nbsp;·&nbsp; <a href="/gamenightguide/finder/">Finder</a> &nbsp;·&nbsp; <a href="/gamenightguide/about/">About</a> &nbsp;·&nbsp; <a href="/gamenightguide/contact/">Contact</a> &nbsp;·&nbsp; <a href="/gamenightguide/photo-credits/">Photo credits</a>
+      </nav>
+    </div>
+    <p class="credits">
+      <a href="/gamenightguide/privacy/">Privacy</a> · <a href="/gamenightguide/disclaimer/">Disclaimer</a> · <a href="/gamenightguide/affiliate-disclosure/">Affiliate Disclosure</a> · <a href="/gamenightguide/feed.xml">RSS</a><br>
+      Prices change. Always check the live price at the store before you buy. Game facts last checked 22 Nov 2026. This site earns a commission on some links, at no extra cost to you. See the <a href="/gamenightguide/affiliate-disclosure/">Affiliate Disclosure</a>.
     </p>
-    <p class="muted">Prices change. Always check the live price at the store before you buy. Game facts last checked 22 Nov 2026. This site earns a commission on some links, at no extra cost to you. See the <a href="/gamenightguide/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
   </div>
 </footer>
+<script>
+(function () {
+  var bar = document.getElementById("progress");
+  if (!bar) return;
+  function update() {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
+  }
+  window.addEventListener("scroll", update, { passive: true });
+  update();
+})();
+</script>
 </body>
 </html>

@@ -17,11 +17,11 @@ They are not the same game, and they are not for the same people. This guide com
 
 <figure class="versus">
   <div class="versus-side">
-    <img src="/images/photos/ticket-to-ride-play.jpg" alt="Ticket to Ride board in play, with coloured train pieces on the routes around Santa Fe" width="800" height="500" loading="lazy">
+    <img src="/images/photos/ticket-to-ride-play.jpg" alt="Ticket to Ride board in play, with coloured train pieces on the routes around Santa Fe" width="800" height="450" loading="lazy">
     <figcaption><strong>Ticket to Ride.</strong> 2–5 players, 45–60 min, ages 8+. Photo: Billie Grace Ward, CC BY 2.0, via Wikimedia Commons.</figcaption>
   </div>
   <div class="versus-side">
-    <img src="/images/photos/catan-play.jpg" alt="A completed game of Catan, with hex tiles, settlements and cards on the table" width="800" height="500" loading="lazy">
+    <img src="/images/photos/catan-play.jpg" alt="A completed game of Catan, with hex tiles, settlements and cards on the table" width="800" height="450" loading="lazy">
     <figcaption><strong>Catan.</strong> 3–4 players, 60–90 min, ages 10+. Photo: Fritzmann2002, CC BY-SA 4.0, via Wikimedia Commons.</figcaption>
   </div>
 </figure>

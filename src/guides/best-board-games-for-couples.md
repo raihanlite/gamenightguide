@@ -5,7 +5,7 @@ description: "The best board games for two people: date-night picks that are act
 date: 2026-11-22
 topic: Couples
 image: /images/og-couples.jpg
-imageAlt: "A young couple playing chess together at home, Game Night Guide"
+imageAlt: "A couple playing Scrabble together at a table in a library, Game Night Guide"
 photo: /images/photos/couples.jpg
 ---
 

@@ -36,7 +36,7 @@ GUIDES = {
              "Board games for beginners, couples and families."),
     "beginners": ("8111365", "Best Board Games for Beginners",
                   "Ten games you can teach in ten minutes."),
-    "couples": ("5234254", "Best Board Games for Couples",
+    "couples": ("5649889", "Best Board Games for Couples",
                 "Date-night games made for two."),
     "2-players-under-40": ("6218134", "Best Board Games for 2 Players Under $40",
                            "Games made for two, not games that allow two."),
@@ -61,9 +61,9 @@ def centre_crop(im, tw, th, fx=0.5, fy=0.5):
     return im.crop((x, y, x + tw, y + th))
 
 
-# Crop focus per slug: the couples photo is portrait, so aim near the top
-# where the faces are instead of the middle (which cuts them off).
-FOCUS = {"couples": (0.5, 0.10)}
+# Crop focus per slug: the couples photo is landscape, faces upper middle
+# and the board along the bottom, so aim slightly above the middle.
+FOCUS = {"couples": (0.5, 0.25)}
 
 
 def fit_font(draw, text, font_path, start, max_w, min_size=28):
@@ -95,9 +95,15 @@ def wrap_title(draw, text, font_path, start, max_w):
     return [text], ImageFont.truetype(font_path, 28)
 
 
+# Focus for the OG photo band: the band is short, so aim near the top
+# to keep faces in frame.
+OG_FOCUS = {"couples": (0.5, 0.10)}
+
+
 def make_og(slug, pid, title, subtitle):
     src = Image.open(os.path.join(RAW, f"pexels-{pid}.jpg")).convert("RGB")
-    photo = centre_crop(src, 1200, 392)
+    fx, fy = OG_FOCUS.get(slug, (0.5, 0.5))
+    photo = centre_crop(src, 1200, 392, fx=fx, fy=fy)
     canvas = Image.new("RGB", (1200, 630), GREEN)
     canvas.paste(photo, (0, 0))
     d = ImageDraw.Draw(canvas)
@@ -120,10 +126,11 @@ def main():
     os.makedirs(PHOTOS, exist_ok=True)
     for slug, (pid, title, subtitle) in GUIDES.items():
         src = Image.open(os.path.join(RAW, f"pexels-{pid}.jpg")).convert("RGB")
-        photo = centre_crop(src, 1200, 630)
+        fx, fy = FOCUS.get(slug, (0.5, 0.5))
+        photo = centre_crop(src, 1200, 630, fx=fx, fy=fy)
         p = os.path.join(PHOTOS, f"{slug}.jpg")
         photo.save(p, quality=80, optimize=True)
-        thumb = centre_crop(src, 800, 450)
+        thumb = centre_crop(src, 800, 450, fx=fx, fy=fy)
         t = os.path.join(PHOTOS, f"{slug}-thumb.jpg")
         thumb.save(t, quality=78, optimize=True)
         og = make_og(slug, pid, title, subtitle)

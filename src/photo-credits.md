@@ -13,7 +13,7 @@ permalink: /photo-credits/index.html
 
 - **Home page hero and home OG image:** friends playing a board game at a wooden table. Photo by Pavel Danilyuk, Pexels. https://www.pexels.com/photo/people-sitting-on-a-wooden-table-playing-board-game-8111356/
 - **Best board games for beginners:** friends laughing over a board game. Photo by Pavel Danilyuk, Pexels. https://www.pexels.com/photo/smiling-friends-playing-board-game-on-table-8111365/
-- **Best board games for couples:** a young couple playing chess together at home. Photo by Anna Tarazevich, Pexels. https://www.pexels.com/photo/man-and-woman-happily-enjoying-the-chess-game-5234254/
+- **Best board games for couples:** a man and a woman playing Scrabble together in a library. Photo by Thirdman, Pexels. https://www.pexels.com/photo/man-and-woman-playing-scrabble-inside-the-library-5649889/
 - **Best board games for 2 players under $40:** friends playing a board game, seen from above. Photo by cottonbro studio, Pexels. https://www.pexels.com/photo/overhead-shot-of-a-group-of-people-playing-a-board-game-6218134/
 - **Best solo board games for beginners:** hands setting up a board game with colourful pieces. Photo by kaboompics, Pexels. https://www.pexels.com/photo/close-up-of-mans-hands-playing-a-game-6333907/
 - **Best board games under $30:** hands shuffling Uno cards. Photo by Edgar Colomba, Pexels. https://www.pexels.com/photo/person-shuffling-uno-cards-3986042/

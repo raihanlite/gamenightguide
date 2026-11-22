@@ -19,6 +19,16 @@ But solo games have a trap. The games that solo players talk about most, Spirit 
 
 They are terrible first solo games. This guide starts with the gentle ones, and tells you honestly when the big ones are worth it.
 
+## Watch it played
+
+This video covers ten gentle solo games for new solo players, including Cascadia.
+
+<div class="video">
+  <iframe src="https://www.youtube-nocookie.com/embed/RGZkJnhQnXc" title="The 10 Best Solo Board Games for Beginners" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="video-cap">Watch: "The 10 Best Solo Board Games for Beginners" by Specifically Solo on YouTube.</p>
+
 ## At a glance
 
 | Game | Players | Time | What it is | Price (verified) |

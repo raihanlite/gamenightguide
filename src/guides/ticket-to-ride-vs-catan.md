@@ -28,6 +28,16 @@ They are not the same game, and they are not for the same people. This guide com
 
 <p class="photo-note">These photos show the games in play. The box art is copyrighted by the publishers, Days of Wonder for Ticket to Ride and Catan GmbH for Catan, so we do not show it here. Real box images will be added later through Amazon Associates, once that account exists.</p>
 
+## Watch it played
+
+Catan is the harder of the two games to teach, so start here if you buy Catan first.
+
+<div class="video">
+  <iframe src="https://www.youtube-nocookie.com/embed/oiQ6SgBzfqY" title="Catan - How To Play" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="video-cap">Watch: "Catan - How To Play" by Watch It Played on YouTube.</p>
+
 ## At a glance
 
 | | Ticket to Ride | Catan |

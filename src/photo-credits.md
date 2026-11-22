@@ -17,7 +17,7 @@ permalink: /photo-credits/index.html
 - **Best board games for 2 players under $40:** friends playing a board game, seen from above. Photo by cottonbro studio, Pexels. https://www.pexels.com/photo/overhead-shot-of-a-group-of-people-playing-a-board-game-6218134/
 - **Best solo board games for beginners:** hands setting up a board game with colourful pieces. Photo by kaboompics, Pexels. https://www.pexels.com/photo/close-up-of-mans-hands-playing-a-game-6333907/
 - **Best board games under $30:** hands shuffling Uno cards. Photo by Edgar Colomba, Pexels. https://www.pexels.com/photo/person-shuffling-uno-cards-3986042/
-- **Ticket to Ride vs Catan:** split image, Catan board on the left and Ticket to Ride Europe board on the right, with the title "Catan vs Ticket to Ride" at the bottom. Image supplied by the site owner.
+- **Ticket to Ride vs Catan:** split image, built from the two Wikimedia Commons gameplay photos below. Catan board on the left, Ticket to Ride board on the right, with the title "Catan vs Ticket to Ride" in gold text on a dark band at the bottom. The title band is the same style as the other guide images on this page.
 - **Board Game Finder:** friends playing Jenga together. Photo by Pavel Danilyuk, Pexels. https://www.pexels.com/photo/friends-playing-at-the-table-8111299/
 
 ## Wikimedia Commons gameplay photos
@@ -29,7 +29,7 @@ Box cover art is copyrighted by the publishers, so it is not on this site. The t
 
 ## Social sharing images
 
-The OG images are the photos above with a deep green band and the guide title, in the same layout as our Canva design for the home page. Canva design: Game Night Guide OG social sharing image, https://canva.link/0zoz23l3t0ns5o1 (design DAHbn8g9fqM). The Ticket to Ride vs Catan OG is different: it is the owner-supplied split image fitted into 1200x630, so its own title stays visible.
+The OG images are the photos above with a dark band across the bottom and the guide title in gold serif text. The Ticket to Ride vs Catan OG is the same split image as its hero, fitted into 1200x630, so its own title stays visible.
 
 ## Licence
 

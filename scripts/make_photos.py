@@ -47,10 +47,10 @@ GUIDES = {
     "finder": ("8111299", "Board Game Finder",
                "Four questions. One short list."),
 }
-# Note: "ticket-vs-catan" is not in GUIDES any more. Its hero, thumb and OG
-# now come from the owner-supplied split image, made by
-# scripts/make_ticket_vs_catan.py. Do not add it back here, or a rerun of
-# this script would overwrite those files with the old chess photo.
+# Note: "ticket-vs-catan" is not in GUIDES. Its hero, thumb and OG
+# are built from the two Wikimedia Commons gameplay photos by
+# scripts/make_thumbnail_images.py. Do not add it back here, or a rerun
+# of this script would overwrite those files with the old chess photo.
 
 
 def centre_crop(im, tw, th, fx=0.5, fy=0.5):

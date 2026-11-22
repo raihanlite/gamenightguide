@@ -15,6 +15,16 @@ One honest note first. We could not verify a live price for each game in this gu
 
 It tells you which games are small-box games usually sold in the budget range, how to check the real price, and what to avoid. Check the live price before you buy, every time.
 
+## Watch it played
+
+Codenames is one of the budget picks in this guide. This short video teaches it in a few minutes.
+
+<div class="video">
+  <iframe src="https://www.youtube-nocookie.com/embed/J8RWBooJivg" title="Codenames - How To Play" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="video-cap">Watch: "Codenames - How To Play" by Watch It Played on YouTube.</p>
+
 ## Why small-box games are usually cheaper
 
 Board game prices mostly follow the size of the box. A game with a big board, dozens of miniatures and hundreds of pieces costs more to make, and it costs more to ship. A game with a deck of cards and a small board costs less.

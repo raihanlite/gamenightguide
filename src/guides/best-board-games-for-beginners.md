@@ -15,6 +15,16 @@ The best beginner games are Ticket to Ride, Codenames, Azul, Carcassonne and Sus
 
 One warning before you start. Do not buy a game that takes three hours and has a 40-page rulebook. That game can wait. Tonight is for learning, laughing, and finishing what you started.
 
+## Watch it played
+
+Prefer to watch first? This video runs through ten easy games you can learn fast.
+
+<div class="video">
+  <iframe src="https://www.youtube-nocookie.com/embed/XOlTkN0H5nE" title="10 EASY Board Games You Can't Put Down" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="video-cap">Watch: "10 EASY Board Games You Can't Put Down" by Banter and Boards on YouTube.</p>
+
 ## At a glance
 
 | Game | Players | Time | Ages | Best for |

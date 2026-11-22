@@ -19,6 +19,16 @@ One honest note: we could not verify a live price for each game in this guide on
 
 If a game is over $40 at the store you use, skip it and pick another one from this list.
 
+## Watch it played
+
+This countdown covers ten games made for two players.
+
+<div class="video">
+  <iframe src="https://www.youtube-nocookie.com/embed/iFXwfTmOtVE" title="Top 10 2 Player Board Games | 10 Best Board Games for 2 Players" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="video-cap">Watch: "Top 10 2 Player Board Games" by Foster the Meeple on YouTube.</p>
+
 ## At a glance
 
 | Game | Players | Time | Ages | BGG rating |

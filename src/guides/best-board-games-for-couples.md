@@ -15,6 +15,16 @@ The problem is the box. Most board games say "2 to 5 players", but a game built 
 
 This guide only lists games that are good with two. Some were made for exactly two players. The rest are games that real players keep coming back to with two, week after week.
 
+## Watch it played
+
+This video runs through the best games for two, including a few from this guide.
+
+<div class="video">
+  <iframe src="https://www.youtube-nocookie.com/embed/znDrntkVSaU" title="Best Board Games for Couples - Two players games" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<p class="video-cap">Watch: "Best Board Games for Couples - Two players games" by Board Game Hangover on YouTube.</p>
+
 ## At a glance
 
 | Game | Players | Time | Ages | BGG rating |

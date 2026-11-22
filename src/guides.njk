@@ -6,18 +6,17 @@ permalink: /guides/index.html
 ---
 
 <div class="wrap">
-<h1>All guides</h1>
+<h1 style="text-align:center">All guides</h1>
 
-<p class="lede">Every guide lists players, time, age and price, and says plainly when a price has not been verified.</p>
+<p class="lede" style="text-align:center">Every guide lists players, time, age and price, and says plainly when a price has not been verified.</p>
 
-<div class="grid">
+<div class="guide-list">
 {% for post in collections.guides %}
-  <article class="card">
-    <div class="c-img">{% if post.data.photo %}<a href="{{ post.url }}"><img src="{{ post.data.photo | replace('.jpg', '-thumb.jpg') }}" alt="{{ post.data.imageAlt or post.data.title }}" width="800" height="450" loading="lazy"></a>{% endif %}</div>
-    <p class="kicker">{{ post.data.topic }}</p>
+  <article class="guide-item">
+    {% if post.data.photo %}<a class="thumb" href="{{ post.url }}"><img src="{{ post.data.photo | replace('.jpg', '-thumb.jpg') }}" alt="" width="85" height="85" loading="lazy"></a>{% endif %}
     <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
     <p class="dek">{{ post.data.description }}</p>
-    <div class="foot"><span class="meta">{{ post.date | readableDate }} · Last checked {{ site.lastChecked }}</span></div>
+    <p><a class="read-link" href="{{ post.url }}">Read More &rarr;</a></p>
   </article>
 {% endfor %}
 </div>

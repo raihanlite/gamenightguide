@@ -7,28 +7,23 @@ imageAlt: "Friends playing a board game at a wooden table, Game Night Guide"
 ---
 
 <div class="wrap">
-  <section class="masthead">
-    <h1>Buy one game <em>tonight</em>, play it tonight.</h1>
+  <section class="intro">
+    <h1>Buy one game tonight, play it tonight.</h1>
     <p>Plain English board game guides for the USA. Players, time, age and price, checked, so you can pick one game and start playing.</p>
-    <hr class="mast-rule"><hr class="rule2">
   </section>
 
   <section class="featured">
-    <div>
-      <p class="kicker">Featured · Couples</p>
-      <h2><a href="/guides/best-board-games-for-couples/" style="text-decoration:none">Best Board Games for Couples</a></h2>
-      <p class="dek">The best board games for two people: date-night picks that are actually good with two, not games that just tolerate two players. Patchwork, Jaipur, 7 Wonders Duel and more.</p>
-      <p class="meta">22 Nov 2026<span class="dot">Last checked 22 Nov 2026</span></p>
-      <a class="read-link" href="/guides/best-board-games-for-couples/">Read the guide →</a>
-    </div>
-    <div class="f-img"><a href="/guides/best-board-games-for-couples/"><img src="/images/photos/couples.jpg" alt="A couple playing Scrabble together at a table in a library" width="1200" height="675" loading="eager"></a></div>
+    <p class="byline">Featured &middot; Couples &middot; 22 Nov 2026</p>
+    <h2><a href="/guides/best-board-games-for-couples/">Best Board Games for Couples</a></h2>
+    <figure class="f-img"><a href="/guides/best-board-games-for-couples/"><img src="/images/photos/couples.jpg" alt="A couple playing Scrabble together at a table in a library" width="1200" height="675" loading="eager"></a></figure>
+    <p class="dek">The best board games for two people: date-night picks that are actually good with two, not games that just tolerate two players. Patchwork, Jaipur, 7 Wonders Duel and more.</p>
+    <p><a class="read-link" href="/guides/best-board-games-for-couples/">Read the guide &rarr;</a></p>
   </section>
 
   <section class="controls" id="topics">
     <div class="controls-row">
       <h2 id="latest">Latest guides</h2>
       <div class="searchbox">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
         <input type="search" id="searchInput" placeholder="Search guides" aria-label="Search guides">
       </div>
     </div>
@@ -44,14 +39,13 @@ imageAlt: "Friends playing a board game at a wooden table, Game Night Guide"
     <p class="result-count" id="resultCount" aria-live="polite">6 guides</p>
   </section>
 
-  <section class="grid" id="postGrid" aria-label="Guides">
+  <section class="guide-list" id="postGrid" aria-label="Guides">
   {% for post in collections.guides %}
-    <article class="card" data-topic="{{ post.data.topic }}" data-search="{{ post.data.title }} {{ post.data.description }} {{ post.data.topic }}">
-      <div class="c-img">{% if post.data.photo %}<a href="{{ post.url }}"><img src="{{ post.data.photo | replace('.jpg', '-thumb.jpg') }}" alt="{{ post.data.imageAlt or post.data.title }}" width="800" height="450" loading="lazy"></a>{% endif %}</div>
-      <p class="kicker">{{ post.data.topic }}</p>
+    <article class="guide-item" data-topic="{{ post.data.topic }}" data-search="{{ post.data.title }} {{ post.data.description }} {{ post.data.topic }}">
+      {% if post.data.photo %}<a class="thumb" href="{{ post.url }}"><img src="{{ post.data.photo | replace('.jpg', '-thumb.jpg') }}" alt="" width="85" height="85" loading="lazy"></a>{% endif %}
       <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
       <p class="dek">{{ post.data.description }}</p>
-      <div class="foot"><span class="meta">{{ post.date | readableDate }}</span></div>
+      <p><a class="read-link" href="{{ post.url }}">Read More &rarr;</a></p>
     </article>
   {% endfor %}
   </section>
@@ -61,10 +55,10 @@ imageAlt: "Friends playing a board game at a wooden table, Game Night Guide"
     <br><button type="button" id="clearFilters">Show all guides</button>
   </div>
 
-  <div class="callout">
+  <div class="band">
     <h2>Find your game in 30 seconds</h2>
     <p>Answer four questions: players, time, budget, type. The Finder narrows our list to the games that fit your table.</p>
-    <p><a class="btn" href="/finder/">Try the Board Game Finder</a></p>
+    <p><a href="/finder/">Try the Board Game Finder &rarr;</a></p>
   </div>
 
   <h2>How to choose your first game</h2>
@@ -75,28 +69,23 @@ imageAlt: "Friends playing a board game at a wooden table, Game Night Guide"
     <li><strong>Buy one, not five.</strong> One good gateway game beats a shelf of games nobody has learned yet.</li>
   </ol>
 
-  <section class="split">
-    <div>
-      <h2>Start here</h2>
-      <ol class="start-list">
-        <li><span class="num">1.</span><span><a href="/guides/best-board-games-for-beginners/"><span class="t">Best board games for beginners</span><span class="m">Beginners · Ten easy games</span></a></span></li>
-        <li><span class="num">2.</span><span><a href="/guides/best-board-games-for-couples/"><span class="t">Best board games for couples</span><span class="m">Couples · Date night games</span></a></span></li>
-        <li><span class="num">3.</span><span><a href="/guides/best-board-games-for-2-players-under-40/"><span class="t">Best board games for 2 players under $40</span><span class="m">2 players · Games made for two</span></a></span></li>
-      </ol>
-    </div>
-    <div class="about-box" id="about">
-      <h2>About this site</h2>
-      <p><strong>Game Night Guide</strong> is a small, independent site about board games. Every guide starts with the facts that matter at the table: players, time, age, and price.</p>
-      <p>We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.</p>
-      <p>Pick a guide above, or use the Finder to narrow the list to your table.</p>
-    </div>
-  </section>
+  <h2>Start here</h2>
+  <ol class="start-list">
+    <li><span class="num">1.</span><span><a href="/guides/best-board-games-for-beginners/"><span class="t">Best board games for beginners</span><span class="m">Beginners &middot; Ten easy games</span></a></span></li>
+    <li><span class="num">2.</span><span><a href="/guides/best-board-games-for-couples/"><span class="t">Best board games for couples</span><span class="m">Couples &middot; Date night games</span></a></span></li>
+    <li><span class="num">3.</span><span><a href="/guides/best-board-games-for-2-players-under-40/"><span class="t">Best board games for 2 players under $40</span><span class="m">2 players &middot; Games made for two</span></a></span></li>
+  </ol>
 
-  <div class="standards">
-    <h2>How we pick games</h2>
-    <p>We only recommend games we can describe with facts: players, time, age, and a BoardGameGeek rating where one exists. We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.</p>
-    <p>Game facts were last checked 22 Nov 2026. Prices change often, so always check the live price at the store before you buy.</p>
+  <h2>About this site</h2>
+  <div class="about-text">
+    <p><strong>Game Night Guide</strong> is a small, independent site about board games. Every guide starts with the facts that matter at the table: players, time, age, and price.</p>
+    <p>We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.</p>
+    <p>Pick a guide above, or use the Finder to narrow the list to your table.</p>
   </div>
+
+  <h2>How we pick games</h2>
+  <p>We only recommend games we can describe with facts: players, time, age, and a BoardGameGeek rating where one exists. We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.</p>
+  <p>Game facts were last checked 22 Nov 2026. Prices change often, so always check the live price at the store before you buy.</p>
 
   <h2>A note on prices and facts</h2>
   <p>Board game prices change often, and a game's price at Amazon is not the same as at Target. We only publish a price when we have verified it, and we date-stamp every check. Where a price is not verified, we say so.</p>
@@ -110,7 +99,7 @@ imageAlt: "Friends playing a board game at a wooden table, Game Night Guide"
   var count = document.getElementById("resultCount");
   var empty = document.getElementById("emptyState");
   var chips = document.querySelectorAll("#chipRow .chip");
-  var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
+  var cards = Array.prototype.slice.call(grid.querySelectorAll(".guide-item"));
   var activeTopic = "All";
   var query = "";
   function render() {

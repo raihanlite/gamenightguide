@@ -4,14 +4,10 @@ layout: layouts/base.njk
 {% set nxt = collections.guides | nextGuide(page.url) %}
 <article>
   <div class="art-head">
-    <a class="back-btn" href="/guides/">← All guides</a>
-    <p class="kicker">{{ topic or "Guide" }}</p>
+    <p><a class="back-link" href="/guides/">&larr; All guides</a></p>
     <h1>{{ title }}</h1>
     <p class="dek">{{ description }}</p>
-    <div class="art-meta">
-      <span class="avatar" aria-hidden="true">G</span>
-      <span><strong>Game Night Guide</strong><br><span class="meta">{{ page.date | readableDate }} · Last checked {{ site.lastChecked }}</span></span>
-    </div>
+    <p class="art-meta">{{ page.date | readableDate }} &middot; Game Night Guide &middot; Last checked {{ site.lastChecked }}</p>
   </div>
   {% if photo %}
   <figure class="art-hero">
@@ -28,15 +24,12 @@ layout: layouts/base.njk
     {{ content | safe }}
     <hr>
     <p class="disclosure-box">This guide contains affiliate links. If you buy through a link, we may earn a commission at no extra cost to you. Prices change. Check the live price at Amazon, Target or Barnes &amp; Noble before you buy. See our <a href="/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
-    <p><a href="/finder/">Try the Board Game Finder →</a> · <a href="/guides/">All guides →</a></p>
+    <p><a href="/finder/">Try the Board Game Finder &rarr;</a> &middot; <a href="/guides/">All guides &rarr;</a></p>
   </div>
   {% if nxt and nxt.url != page.url %}
   <div class="next-box">
-    <div class="next-card">
-      <p class="kicker" style="margin:0">Read next · {{ nxt.data.topic or "Guide" }}</p>
-      <p class="t"><a href="{{ nxt.url }}">{{ nxt.data.title }}</a></p>
-      <p class="meta" style="margin-top:8px">{{ nxt.date | readableDate }}</p>
-    </div>
+    <span class="smallcaps">Read next</span>
+    <p class="t"><a href="{{ nxt.url }}">{{ nxt.data.title }}</a></p>
   </div>
   {% endif %}
 </article>

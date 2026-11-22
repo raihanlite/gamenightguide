@@ -1,11 +1,9 @@
 ---
-layout: layouts/base.njk
+layout: layouts/page.njk
 title: Photo credits
 description: "Every photo on Game Night Guide, with its photographer and source. All photos are free licensed photos from Pexels."
 permalink: /photo-credits/index.html
 ---
-
-<h1>Photo credits</h1>
 
 <p class="lede">Every photo on this site is a real photograph, free to use under the Pexels licence or a Creative Commons licence. No AI images, no stock illustrations, no box art taken from Google or Amazon.</p>
 

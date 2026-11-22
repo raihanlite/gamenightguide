@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
+<meta name="color-scheme" content="light">
 <title>{% if page.url == "/" %}{{ site.name }}: {{ site.tagline }}{% elif title %}{{ title }} | {{ site.name }}{% else %}{{ site.name }}: {{ site.tagline }}{% endif %}</title>
 <meta name="description" content="{{ description or site.description }}">
 <link rel="canonical" href="{{ site.url }}{{ page.url }}">
@@ -19,10 +19,7 @@
 <meta name="twitter:title" content="{% if title %}{{ title }}{% else %}{{ site.name }}{% endif %}">
 <meta name="twitter:description" content="{{ description or site.description }}">
 <meta name="twitter:image" content="{{ site.url }}{{ image or '/images/og-home.jpg' }}">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23b23a1d'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,500&family=Libre+Franklin:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%238a7a6e'/%3E%3Ctext x='16' y='22' font-size='16' text-anchor='middle' fill='%23fff' font-family='sans-serif' font-weight='bold'%3EG%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="/assets/style.css">
 <link rel="alternate" type="application/rss+xml" title="{{ site.name }}" href="/feed.xml">
 {% if layout == 'layouts/post.njk' %}
@@ -65,15 +62,16 @@
 {% endif %}
 </head>
 <body>
-<div class="progress" id="progress" aria-hidden="true"></div>
 <header class="topbar">
-  <div class="wrap topbar-in">
-    <a class="wordmark" href="/">Game Night Guide<em>.</em></a>
+  <div class="topbar-bar" aria-hidden="true"></div>
+  <div class="topbar-in">
     <nav class="main" aria-label="Main">
       <a href="/guides/">Guides</a>
       <a href="/finder/">Finder</a>
       <a href="/about/">About</a>
     </nav>
+    <a class="wordmark" href="/">Game Night Guide</a>
+    <hr class="head-rule">
   </div>
 </header>
 <main>
@@ -81,33 +79,16 @@
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <div class="foot-grid">
-      <div>
-        <div class="wm">Game Night Guide.</div>
-        <p>{{ site.tagline }}</p>
-      </div>
-      <nav aria-label="Footer">
-        <a href="/guides/">Guides</a> &nbsp;·&nbsp; <a href="/finder/">Finder</a> &nbsp;·&nbsp; <a href="/about/">About</a> &nbsp;·&nbsp; <a href="/contact/">Contact</a> &nbsp;·&nbsp; <a href="/photo-credits/">Photo credits</a>
-      </nav>
-    </div>
+    <div class="wm">Game Night Guide</div>
+    <p>{{ site.tagline }}</p>
+    <nav aria-label="Footer">
+      <a href="/guides/">Guides</a> &nbsp;·&nbsp; <a href="/finder/">Finder</a> &nbsp;·&nbsp; <a href="/about/">About</a> &nbsp;·&nbsp; <a href="/contact/">Contact</a> &nbsp;·&nbsp; <a href="/photo-credits/">Photo credits</a>
+    </nav>
     <p class="credits">
       <a href="/privacy/">Privacy</a> · <a href="/disclaimer/">Disclaimer</a> · <a href="/affiliate-disclosure/">Affiliate Disclosure</a> · <a href="/feed.xml">RSS</a><br>
       Prices change. Always check the live price at the store before you buy. Game facts last checked {{ site.lastChecked }}. This site earns a commission on some links, at no extra cost to you. See the <a href="/affiliate-disclosure/">Affiliate Disclosure</a>.
     </p>
   </div>
 </footer>
-<script>
-(function () {
-  var bar = document.getElementById("progress");
-  if (!bar) return;
-  function update() {
-    var h = document.documentElement;
-    var max = h.scrollHeight - h.clientHeight;
-    bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + "%";
-  }
-  window.addEventListener("scroll", update, { passive: true });
-  update();
-})();
-</script>
 </body>
 </html>

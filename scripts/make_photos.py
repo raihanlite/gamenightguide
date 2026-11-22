@@ -5,7 +5,7 @@ Inputs: /tmp/gng-raw/pexels-<id>.jpg (downloaded from images.pexels.com).
 Outputs (all JPG, quality 80 unless noted):
   src/images/photos/hero-home.jpg   1600x900
   src/images/photos/<slug>.jpg      1200x630 centre crops
-  src/images/photos/<slug>-thumb.jpg 600x375 (home/guide cards, lazy loaded)
+  src/images/photos/<slug>-thumb.jpg 800x450, 16:9 (home/guide cards, lazy loaded)
   src/images/og-<slug>.jpg          1200x630, photo + deep green band + title
       (same layout as the Canva OG design DAHbn8g9fqM: photo on top,
        #1E4D3B band below, cream serif title, amber eyebrow)
@@ -123,7 +123,7 @@ def main():
         photo = centre_crop(src, 1200, 630)
         p = os.path.join(PHOTOS, f"{slug}.jpg")
         photo.save(p, quality=80, optimize=True)
-        thumb = centre_crop(src, 600, 375)
+        thumb = centre_crop(src, 800, 450)
         t = os.path.join(PHOTOS, f"{slug}-thumb.jpg")
         thumb.save(t, quality=78, optimize=True)
         og = make_og(slug, pid, title, subtitle)

@@ -51,6 +51,13 @@ li { margin-bottom: 6px; }
 blockquote { border-left: 3px solid var(--green); margin: 16px 0; padding: 4px 0 4px 16px; color: #3a332a; }
 code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.9em; background: var(--soft); padding: 1px 5px; border-radius: 4px; }
 hr { border: 0; border-top: 1px solid var(--line); margin: 32px 0; }
+/* Versus figure: two photos side by side, stacked on mobile. */
+.versus { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 20px 0 8px; }
+.versus-side { border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--card); }
+.versus-side img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; }
+.versus-side figcaption { padding: 12px 14px; font-size: 14px; color: var(--muted); }
+.versus-side figcaption strong { color: var(--ink); }
+.photo-note { font-size: 14px; color: var(--muted); }
 .card-grid { display: grid; grid-template-columns: 1fr; gap: 18px; margin: 20px 0; }
 .card { border: 1px solid var(--line); border-radius: 12px; padding: 0 0 18px; background: var(--card); overflow: hidden; }
 .card img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover; }
@@ -91,6 +98,7 @@ button:hover { background: var(--green-dark); }
 .finder-result p { margin: 0 0 6px; }
 .finder-result p:last-child { margin-bottom: 0; }
 @media (min-width: 640px) {
+  .versus { grid-template-columns: 1fr 1fr; }
   .card-grid { grid-template-columns: 1fr 1fr; }
   .card-grid.three { grid-template-columns: 1fr 1fr 1fr; }
   h1 { font-size: 40px; }

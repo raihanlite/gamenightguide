@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: Best Board Games for Beginners
 description: "The best board games for beginners: ten gateway games you can teach in under ten minutes and finish in under an hour. Ticket to Ride, Codenames, Azul, Carcassonne and more."
 date: 2026-11-22
+topic: Beginners
 image: /images/og-beginners.jpg
 imageAlt: "Friends laughing over a board game at a wooden table, Game Night Guide"
 photo: /images/photos/beginners.jpg

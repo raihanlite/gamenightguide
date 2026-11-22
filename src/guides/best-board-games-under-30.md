@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: Best Board Games Under $30
 description: "How to buy a good board game for under $30: small-box games, what to check before you pay, and the budget picks that are actually worth it."
 date: 2026-11-22
+topic: Budget
 image: /images/og-under-30.jpg
 imageAlt: "Hands shuffling Uno cards during a game night, Game Night Guide"
 photo: /images/photos/under-30.jpg

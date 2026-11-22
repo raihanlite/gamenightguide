@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: Ticket to Ride vs Catan
 description: "Ticket to Ride vs Catan: which first board game should you buy? Players, time, age, difficulty and who each game is actually for, compared side by side."
 date: 2026-11-22
+topic: Versus
 image: /images/og-ticket-vs-catan.jpg
 imageAlt: "Wooden chess pieces in close-up on a board, Game Night Guide"
 photo: /images/photos/ticket-vs-catan.jpg

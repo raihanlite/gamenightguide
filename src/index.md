@@ -6,72 +6,134 @@ image: /images/og-home.jpg
 imageAlt: "Friends playing a board game at a wooden table, Game Night Guide"
 ---
 
-<div class="home-hero">
-  <img src="/images/photos/hero-home.jpg" alt="Friends playing a board game at a wooden table on a warm evening" width="1600" height="900" loading="eager">
-  <div class="home-hero-text">
-    <h1>Board games, in plain English.</h1>
-    <p class="lede">Buy one game tonight. Play it tonight. We tell you how many players it needs, how long it takes, what age it suits, and what it costs.</p>
-    <p><a class="btn" href="/finder/">Find your game</a> <a class="btn-ghost" href="/guides/best-board-games-for-beginners/">Start with beginners</a></p>
+<div class="wrap">
+  <section class="masthead">
+    <h1>Buy one game <em>tonight</em>, play it tonight.</h1>
+    <p>Plain English board game guides for the USA. Players, time, age and price, checked, so you can pick one game and start playing.</p>
+    <hr class="mast-rule"><hr class="rule2">
+  </section>
+
+  <section class="featured">
+    <div>
+      <p class="kicker">Featured · Couples</p>
+      <h2><a href="/guides/best-board-games-for-couples/" style="text-decoration:none">Best Board Games for Couples</a></h2>
+      <p class="dek">The best board games for two people: date-night picks that are actually good with two, not games that just tolerate two players. Patchwork, Jaipur, 7 Wonders Duel and more.</p>
+      <p class="meta">22 Nov 2026<span class="dot">Last checked 22 Nov 2026</span></p>
+      <a class="read-link" href="/guides/best-board-games-for-couples/">Read the guide →</a>
+    </div>
+    <div class="f-img"><a href="/guides/best-board-games-for-couples/"><img src="/images/photos/couples.jpg" alt="A young couple playing chess together at home" width="1200" height="630" loading="eager"></a></div>
+  </section>
+
+  <section class="controls" id="topics">
+    <div class="controls-row">
+      <h2 id="latest">Latest guides</h2>
+      <div class="searchbox">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        <input type="search" id="searchInput" placeholder="Search guides" aria-label="Search guides">
+      </div>
+    </div>
+    <div class="chips" id="chipRow" role="group" aria-label="Filter by topic">
+      <button type="button" class="chip" data-topic="All" aria-pressed="true">All</button>
+      <button type="button" class="chip" data-topic="Beginners" aria-pressed="false">Beginners</button>
+      <button type="button" class="chip" data-topic="Couples" aria-pressed="false">Couples</button>
+      <button type="button" class="chip" data-topic="2 players" aria-pressed="false">2 players</button>
+      <button type="button" class="chip" data-topic="Solo" aria-pressed="false">Solo</button>
+      <button type="button" class="chip" data-topic="Budget" aria-pressed="false">Budget</button>
+      <button type="button" class="chip" data-topic="Versus" aria-pressed="false">Versus</button>
+    </div>
+    <p class="result-count" id="resultCount" aria-live="polite">6 guides</p>
+  </section>
+
+  <section class="grid" id="postGrid" aria-label="Guides">
+  {% for post in collections.guides %}
+    <article class="card" data-topic="{{ post.data.topic }}" data-search="{{ post.data.title }} {{ post.data.description }} {{ post.data.topic }}">
+      <div class="c-img">{% if post.data.photo %}<a href="{{ post.url }}"><img src="{{ post.data.photo | replace('.jpg', '-thumb.jpg') }}" alt="{{ post.data.imageAlt or post.data.title }}" width="600" height="375" loading="lazy"></a>{% endif %}</div>
+      <p class="kicker">{{ post.data.topic }}</p>
+      <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+      <p class="dek">{{ post.data.description }}</p>
+      <div class="foot"><span class="meta">{{ post.date | readableDate }}</span></div>
+    </article>
+  {% endfor %}
+  </section>
+  <div class="empty" id="emptyState" hidden>
+    <strong>Nothing matches that, yet.</strong>
+    Try a different word, or browse a topic instead.
+    <br><button type="button" id="clearFilters">Show all guides</button>
   </div>
+
+  <div class="callout">
+    <h2>Find your game in 30 seconds</h2>
+    <p>Answer four questions: players, time, budget, type. The Finder narrows our list to the games that fit your table.</p>
+    <p><a class="btn" href="/finder/">Try the Board Game Finder</a></p>
+  </div>
+
+  <h2>How to choose your first game</h2>
+  <ol>
+    <li><strong>Count the players.</strong> Most game nights are 2 people, or 3 to 4. A game that says "2 to 5 players" is not always good with 2.</li>
+    <li><strong>Check the time.</strong> A 30-minute game gets played. A 3-hour game sits on the shelf. Start under 60 minutes.</li>
+    <li><strong>Learn the rules in 10 minutes.</strong> The best first games, Ticket to Ride, Codenames, Azul, Carcassonne, Sushi Go!, are teachable in under ten minutes and finish in under an hour.</li>
+    <li><strong>Buy one, not five.</strong> One good gateway game beats a shelf of games nobody has learned yet.</li>
+  </ol>
+
+  <section class="split">
+    <div>
+      <h2>Start here</h2>
+      <ol class="start-list">
+        <li><span class="num">1.</span><span><a href="/guides/best-board-games-for-beginners/"><span class="t">Best board games for beginners</span><span class="m">Beginners · Ten easy games</span></a></span></li>
+        <li><span class="num">2.</span><span><a href="/guides/best-board-games-for-couples/"><span class="t">Best board games for couples</span><span class="m">Couples · Date night games</span></a></span></li>
+        <li><span class="num">3.</span><span><a href="/guides/best-board-games-for-2-players-under-40/"><span class="t">Best board games for 2 players under $40</span><span class="m">2 players · Games made for two</span></a></span></li>
+      </ol>
+    </div>
+    <div class="about-box" id="about">
+      <h2>About this site</h2>
+      <p><strong>Game Night Guide</strong> is a small, independent site about board games. Every guide starts with the facts that matter at the table: players, time, age, and price.</p>
+      <p>We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.</p>
+      <p>Pick a guide above, or use the Finder to narrow the list to your table.</p>
+    </div>
+  </section>
+
+  <div class="standards">
+    <h2>How we pick games</h2>
+    <p>We only recommend games we can describe with facts: players, time, age, and a BoardGameGeek rating where one exists. We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.</p>
+    <p>Game facts were last checked 22 Nov 2026. Prices change often, so always check the live price at the store before you buy.</p>
+  </div>
+
+  <h2>A note on prices and facts</h2>
+  <p>Board game prices change often, and a game's price at Amazon is not the same as at Target. We only publish a price when we have verified it, and we date-stamp every check. Where a price is not verified, we say so.</p>
+  <p>See the note at the top of each guide. Game facts (players, time, age, BoardGameGeek rating) were last checked 22 Nov 2026.</p>
 </div>
 
-## Start here: who is playing?
-
-<div class="card-grid three">
-  <div class="card">
-    <img src="/images/photos/beginners-thumb.jpg" alt="Friends laughing over a board game at a wooden table" width="600" height="375" loading="lazy">
-    <p class="tag">First game</p>
-    <h3><a href="/guides/best-board-games-for-beginners/">Beginners</a></h3>
-    <p>Never played a modern board game? Ten easy games, all learnable in about ten minutes.</p>
-  </div>
-  <div class="card">
-    <img src="/images/photos/couples-thumb.jpg" alt="A young couple playing chess together at home" width="600" height="375" loading="lazy">
-    <p class="tag">Date night</p>
-    <h3><a href="/guides/best-board-games-for-couples/">Couples</a></h3>
-    <p>Games made for two, not games that just allow two. Patchwork, Jaipur and 7 Wonders Duel lead the list.</p>
-  </div>
-  <div class="card">
-    <img src="/images/photos/2-players-under-40-thumb.jpg" alt="Friends playing a board game seen from above" width="600" height="375" loading="lazy">
-    <p class="tag">Two players</p>
-    <h3><a href="/guides/best-board-games-for-2-players-under-40/">2 players under $40</a></h3>
-    <p>Two-player games that are actually good with two, at a price you can plan around.</p>
-  </div>
-</div>
-
-<div class="callout">
-  <h2>Find your game in 30 seconds</h2>
-  <p>Answer four questions: players, time, budget, type. The Finder narrows our list to the games that fit your table.</p>
-  <p><a class="btn" href="/finder/">Try the Board Game Finder</a></p>
-</div>
-
-## How to choose your first game
-
-1. **Count the players.** Most game nights are 2 people, or 3 to 4. A game that says "2 to 5 players" is not always good with 2.
-2. **Check the time.** A 30-minute game gets played. A 3-hour game sits on the shelf. Start under 60 minutes.
-3. **Learn the rules in 10 minutes.** The best first games, Ticket to Ride, Codenames, Azul, Carcassonne, Sushi Go!, are teachable in under ten minutes and finish in under an hour.
-4. **Buy one, not five.** One good gateway game beats a shelf of games nobody has learned yet.
-
-## How we pick games
-
-We only recommend games we can describe with facts: players, time, age, and a BoardGameGeek rating where one exists. We publish a price only when we have verified it, and we date-stamp every check. Where a price is not verified, we say so, in the guide itself.
-
-Game facts were last checked 22 Nov 2026. Prices change often, so always check the live price at the store before you buy.
-
-## All guides
-
-<div class="card-grid">
-{% for post in collections.guides %}
-  <div class="card">
-    {% if post.data.photo %}<img src="{{ post.data.photo | replace('.jpg', '-thumb.jpg') }}" alt="{{ post.data.imageAlt or post.data.title }}" width="600" height="375" loading="lazy">{% endif %}
-    <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
-    <p>{{ post.data.description }}</p>
-    <p class="muted">{{ post.date | readableDate }} · Last checked {{ site.lastChecked }}</p>
-  </div>
-{% endfor %}
-</div>
-
-## A note on prices and facts
-
-Board game prices change often, and a game's price at Amazon is not the same as at Target. We only publish a price when we have verified it, and we date-stamp every check. Where a price is not verified, we say so.
-
-See the note at the top of each guide. Game facts (players, time, age, BoardGameGeek rating) were last checked 22 Nov 2026.
+<script>
+(function () {
+  var input = document.getElementById("searchInput");
+  var grid = document.getElementById("postGrid");
+  var count = document.getElementById("resultCount");
+  var empty = document.getElementById("emptyState");
+  var chips = document.querySelectorAll("#chipRow .chip");
+  var cards = Array.prototype.slice.call(grid.querySelectorAll(".card"));
+  var activeTopic = "All";
+  var query = "";
+  function render() {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var inTopic = activeTopic === "All" || card.getAttribute("data-topic") === activeTopic;
+      var hay = (card.getAttribute("data-search") || "").toLowerCase();
+      var ok = inTopic && (!query || hay.indexOf(query.toLowerCase()) !== -1);
+      card.style.display = ok ? "" : "none";
+      if (ok) shown += 1;
+    });
+    empty.hidden = shown !== 0;
+    grid.style.display = shown === 0 ? "none" : "";
+    count.textContent = shown === cards.length ? cards.length + " guides" : shown + (shown === 1 ? " guide" : " guides") + " matching";
+    chips.forEach(function (b) { b.setAttribute("aria-pressed", b.getAttribute("data-topic") === activeTopic ? "true" : "false"); });
+  }
+  chips.forEach(function (b) {
+    b.addEventListener("click", function () { activeTopic = b.getAttribute("data-topic"); render(); });
+  });
+  input.addEventListener("input", function () { query = input.value.trim(); render(); });
+  document.getElementById("clearFilters").addEventListener("click", function () {
+    query = ""; input.value = ""; activeTopic = "All"; render();
+  });
+  render();
+})();
+</script>

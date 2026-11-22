@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: Best Board Games for Couples
 description: "The best board games for two people: date-night picks that are actually good with two, not games that just tolerate two players. Patchwork, Jaipur, 7 Wonders Duel and more."
 date: 2026-11-22
+topic: Couples
 image: /images/og-couples.jpg
 imageAlt: "A young couple playing chess together at home, Game Night Guide"
 photo: /images/photos/couples.jpg

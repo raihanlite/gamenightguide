@@ -16,6 +16,13 @@ module.exports = function (eleventyConfig) {
     });
   });
 
+  // Next guide in the collection, wrapping to the first one.
+  eleventyConfig.addFilter("nextGuide", (guides, url) => {
+    const i = guides.findIndex((g) => g.url === url);
+    if (i < 0 || guides.length === 0) return guides[0];
+    return guides[(i + 1) % guides.length];
+  });
+
   // ISO date for sitemaps, e.g. "2026-11-22"
   eleventyConfig.addFilter("isoDate", (date) => {
     if (!date) return "";

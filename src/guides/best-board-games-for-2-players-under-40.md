@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: Best Board Games for 2 Players Under $40
 description: "The best board games for 2 players under $40: games made for two, not games that just allow two. Patchwork, Jaipur, 7 Wonders Duel, Sky Team and more."
 date: 2026-11-22
+topic: 2 players
 image: /images/og-2-players-under-40.jpg
 imageAlt: "Friends playing a board game seen from above, Game Night Guide"
 photo: /images/photos/2-players-under-40.jpg

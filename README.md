@@ -90,6 +90,20 @@ scripts/make_images.py   generates 1200×630 OG PNGs with PIL
   Everything else is blank on purpose.
 - **Players / time / age:** from the research file only.
 
+## Theme
+
+The visual theme comes from Md's supplied Field Notes theme
+(`~/workspace/user/files/Blog.html`, 22 Nov 2026): Newsreader serif
+headings, Libre Franklin sans body, warm paper colours, burnt orange
+accent (#b23a1d), 14px radius, soft shadows, dark mode, sticky top bar,
+masthead with an italic accent word, featured post, search plus topic
+chips, 3 column card grid, Start here list, About box, and article pages
+with a progress bar, drop cap and next post card. Only the theme was
+ported: its CSS, fonts, colours, layout and components. None of its
+posts, text or embedded photos were copied. The theme's save button and
+saved counter were left out (no accounts, no tracking), and its single
+page app article view was replaced by real Eleventy article pages.
+
 ## Writing style
 
 No em dashes anywhere. Use commas for natural pauses, periods to

@@ -3,6 +3,7 @@ layout: layouts/post.njk
 title: Best Solo Board Games for Beginners
 description: "The best solo board games for beginners: gentle, affordable solo games to start with, and the expensive epics to leave for later. Cascadia, Friday, and what solo play is really like."
 date: 2026-11-22
+topic: Solo
 image: /images/og-solo-beginners.jpg
 imageAlt: "Hands setting up a board game with colourful pieces, Game Night Guide"
 photo: /images/photos/solo-beginners.jpg

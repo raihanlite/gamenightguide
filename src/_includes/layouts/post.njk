@@ -1,18 +1,42 @@
 ---
 layout: layouts/base.njk
 ---
-<article class="post">
-  <p class="crumbs"><a href="/">Home</a> › <a href="/guides/">Guides</a> › {{ title }}</p>
-  <h1>{{ title }}</h1>
-  <p class="meta">Published {{ page.date | readableDate }} · Last checked {{ site.lastChecked }}</p>
+{% set nxt = collections.guides | nextGuide(page.url) %}
+<article>
+  <div class="art-head">
+    <a class="back-btn" href="/guides/">← All guides</a>
+    <p class="kicker">{{ topic or "Guide" }}</p>
+    <h1>{{ title }}</h1>
+    <p class="dek">{{ description }}</p>
+    <div class="art-meta">
+      <span class="avatar" aria-hidden="true">G</span>
+      <span><strong>Game Night Guide</strong><br><span class="meta">{{ page.date | readableDate }} · Last checked {{ site.lastChecked }}</span></span>
+    </div>
+  </div>
   {% if photo %}
-  <img class="hero" src="{{ photo }}" alt="{{ imageAlt or title }}" width="1200" height="630" loading="eager">
+  <figure class="art-hero">
+    <img src="{{ photo }}" alt="{{ imageAlt or title }}" width="1200" height="630" loading="eager">
+    <figcaption>Photo: see <a href="/photo-credits/">photo credits</a>.</figcaption>
+  </figure>
   {% elif image %}
-  <img class="hero" src="{{ image }}" alt="{{ imageAlt or title }}" width="1200" height="630" loading="eager">
+  <figure class="art-hero">
+    <img src="{{ image }}" alt="{{ imageAlt or title }}" width="1200" height="630" loading="eager">
+    <figcaption>Photo: see <a href="/photo-credits/">photo credits</a>.</figcaption>
+  </figure>
   {% endif %}
-  {% if photo %}<p class="photo-credit">Photo: see <a href="/photo-credits/">photo credits</a>.</p>{% endif %}
-  {{ content | safe }}
-  <hr>
-  <p class="disclosure-box">This guide contains affiliate links. If you buy through a link, we may earn a commission at no extra cost to you. Prices change. Check the live price at Amazon, Target or Barnes &amp; Noble before you buy. See our <a href="/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
-  <p><a href="/finder/">Try the Board Game Finder →</a> · <a href="/guides/">All guides →</a></p>
+  <div class="art-body">
+    {{ content | safe }}
+    <hr>
+    <p class="disclosure-box">This guide contains affiliate links. If you buy through a link, we may earn a commission at no extra cost to you. Prices change. Check the live price at Amazon, Target or Barnes &amp; Noble before you buy. See our <a href="/affiliate-disclosure/">Affiliate Disclosure</a>.</p>
+    <p><a href="/finder/">Try the Board Game Finder →</a> · <a href="/guides/">All guides →</a></p>
+  </div>
+  {% if nxt and nxt.url != page.url %}
+  <div class="next-box">
+    <div class="next-card">
+      <p class="kicker" style="margin:0">Read next · {{ nxt.data.topic or "Guide" }}</p>
+      <p class="t"><a href="{{ nxt.url }}">{{ nxt.data.title }}</a></p>
+      <p class="meta" style="margin-top:8px">{{ nxt.date | readableDate }}</p>
+    </div>
+  </div>
+  {% endif %}
 </article>

@@ -38,9 +38,17 @@ SERIF_BOLD = "/usr/share/fonts/truetype/noto/NotoSerifDisplay-Bold.ttf"
 SANS_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
 
 # slug: (source photo file in PHOTOS, title for the band, focus x, focus y)
+# An optional 5th element, an opts dict, tunes one guide without
+# touching the others. "fit" fits the whole photo into the area above
+# the band instead of cover-cropping it: the couples photo needs it,
+# because the faces and the Scrabble board span almost the full height
+# of the source, so a bottom-biased cover crop either cuts the top of
+# a head or hides the board under the band. "fade" shortens the dark
+# gradient above the band so the board stays bright.
 GUIDES = {
     "beginners": ("beginners.jpg", "Best Board Games for Beginners", 0.5, 0.5),
-    "couples": ("couples.jpg", "Best Board Games for Couples", 0.5, 0.35),
+    "couples": ("couples.jpg", "Best Board Games for Couples", 0.5, 0.35,
+                {"fit": True, "fade": 20}),
     "2-players-under-40": ("2-players-under-40.jpg",
                             "Best Board Games for 2 Players Under $40", 0.5, 0.5),
     "under-30": ("under-30.jpg", "Best Board Games Under $30", 0.5, 0.5),
@@ -90,18 +98,18 @@ def measure_band(draw, title, max_w, margin=60):
     return lines, font, band_h
 
 
-def add_band(canvas, title, lines, font, band_h, margin=60):
+def add_band(canvas, title, lines, font, band_h, margin=60, fade=90):
     """Dark band across the bottom with a gold serif title.
 
     A soft gradient above the band lets the photo fade into it,
-    like the owner's example.
+    like the owner's example. A short fade keeps the bottom of the
+    photo bright, which the couples board needs.
     """
     w, h = canvas.size
     band_top = h - band_h
-    # gradient: transparent at band_top - 90, solid ink at band_top
+    # gradient: transparent at band_top - fade, solid ink at band_top
     overlay = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     od = ImageDraw.Draw(overlay)
-    fade = 90
     for y in range(band_top - fade, band_top):
         a = int(255 * (y - (band_top - fade)) / fade)
         od.line([(0, y), (w, y)], fill=INK + (a,))
@@ -123,12 +131,36 @@ def add_band(canvas, title, lines, font, band_h, margin=60):
     return canvas
 
 
-def make_photo_title(slug, src_file, title, fx, fy):
+def banded(src, w, h, title, fx, fy, fit=False, fade=90):
+    """Photo plus title band at w x h.
+
+    Cover-crops the photo to fill the canvas, then draws the band over
+    the bottom. With fit=True the whole photo is scaled into the area
+    above the band instead, centred, with ink pillars at the sides:
+    nothing is cropped, so a photo whose subject spans the full height
+    keeps both its top and its bottom in frame.
+    """
+    lines, font, band_h = measure_band(
+        ImageDraw.Draw(Image.new("RGB", (w, h))), title, w - 120)
+    canvas = Image.new("RGB", (w, h), INK)
+    if fit:
+        vis_h = h - band_h
+        pw = round(src.size[0] * vis_h / src.size[1])
+        photo = src.resize((pw, vis_h), Image.LANCZOS)
+        canvas.paste(photo, ((w - pw) // 2, 0))
+    else:
+        canvas.paste(cover_crop(src, w, h, fx, fy), (0, 0))
+    add_band(canvas, title, lines, font, band_h, fade=fade)
+    return canvas
+
+
+def make_photo_title(slug, src_file, title, fx, fy, opts=None):
+    opts = opts or {}
     src = Image.open(os.path.join(SOURCE, src_file)).convert("RGB")
+    fit = opts.get("fit", False)
+    fade = opts.get("fade", 90)
     # hero, 1200x675, 16:9
-    hero = cover_crop(src, 1200, 675, fx, fy)
-    lines, font, band_h = measure_band(ImageDraw.Draw(hero), title, 1200 - 120)
-    add_band(hero, title, lines, font, band_h)
+    hero = banded(src, 1200, 675, title, fx, fy, fit, fade)
     p = os.path.join(PHOTOS, f"{slug}.jpg")
     hero.save(p, quality=80, optimize=True)
     # card thumb, 800x450, plain photo crop, no band
@@ -136,9 +168,7 @@ def make_photo_title(slug, src_file, title, fx, fy):
     t = os.path.join(PHOTOS, f"{slug}-thumb.jpg")
     thumb.save(t, quality=78, optimize=True)
     # OG, 1200x630
-    og = cover_crop(src, 1200, 630, fx, fy)
-    lines, font, band_h = measure_band(ImageDraw.Draw(og), title, 1200 - 120)
-    add_band(og, title, lines, font, band_h)
+    og = banded(src, 1200, 630, title, fx, fy, fit, fade)
     o = os.path.join(OUT, f"og-{slug}.jpg")
     og.save(o, quality=82, optimize=True)
     print(f"{slug}: hero {os.path.getsize(p)//1024}KB, "
@@ -186,8 +216,8 @@ def make_versus():
 
 
 def main():
-    for slug, (src_file, title, fx, fy) in GUIDES.items():
-        make_photo_title(slug, src_file, title, fx, fy)
+    for slug, entry in GUIDES.items():
+        make_photo_title(slug, *entry[:4], entry[4] if len(entry) > 4 else None)
     make_versus()
 
 

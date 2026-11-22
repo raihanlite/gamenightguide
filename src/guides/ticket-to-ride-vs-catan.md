@@ -14,6 +14,19 @@ They are both gateway games. Both are easy to learn. Both have been introducing 
 
 They are not the same game, and they are not for the same people. This guide compares them on the facts, and tells you which one to buy for your table.
 
+<figure class="versus">
+  <div class="versus-side">
+    <img src="/images/photos/ticket-to-ride-play.jpg" alt="Ticket to Ride board in play, with coloured train pieces on the routes around Santa Fe" width="800" height="500" loading="lazy">
+    <figcaption><strong>Ticket to Ride.</strong> 2–5 players, 45–60 min, ages 8+. Photo: Billie Grace Ward, CC BY 2.0, via Wikimedia Commons.</figcaption>
+  </div>
+  <div class="versus-side">
+    <img src="/images/photos/catan-play.jpg" alt="A completed game of Catan, with hex tiles, settlements and cards on the table" width="800" height="500" loading="lazy">
+    <figcaption><strong>Catan.</strong> 3–4 players, 60–90 min, ages 10+. Photo: Fritzmann2002, CC BY-SA 4.0, via Wikimedia Commons.</figcaption>
+  </div>
+</figure>
+
+<p class="photo-note">These photos show the games in play. The box art is copyrighted by the publishers, Days of Wonder for Ticket to Ride and Catan GmbH for Catan, so we do not show it here. Real box images will be added later through Amazon Associates, once that account exists.</p>
+
 ## At a glance
 
 | | Ticket to Ride | Catan |

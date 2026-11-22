@@ -115,6 +115,19 @@ stay as they are.
 - Affiliate programme sign-ups (Amazon, Target, Barnes &amp; Noble)
   are not done. Links currently go to public store pages without an
   affiliate tag; the disclosure page says so.
+- **Box art (real game covers):** not used, on purpose. Box cover art
+  is publisher copyright (Days of Wonder for Ticket to Ride, Catan
+  GmbH / Catan Studio for Catan), and Commons will not host it.
+  Never download box art from Google, Amazon, Wikipedia or
+  Instagram and put it on the site. The legal route for real box
+  images is Amazon Associates: product images are allowed only for
+  registered Associates, served live through the Amazon Creators
+  API, never downloaded or rehosted, never edited except
+  proportional resize. API access needs 10 qualifying sales in the
+  past 30 days, and Md has no Associates account yet, so this route
+  is blocked for now. Until then, use Wikimedia Commons gameplay
+  photos with credit, as in the Ticket to Ride vs Catan guide
+  (Billie Grace Ward, CC BY 2.0; Fritzmann2002, CC BY-SA 4.0).
 
 ## Decisions still needed from Md
 
